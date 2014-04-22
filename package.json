@@ -23,6 +23,19 @@
   },
   "dependencies": {
     "logfmt": "~1.1.2",
-    "express": "~4.0.0"
+    "express": "~4.0.0",
+    "mongodb": "~1.4.2",
+    "mongoose": "~3.8.8",
+    "restify-errors": "~2.6.1",
+    "body-parser": "~1.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-sync": "0.0.7",
+    "grunt-delete-sync": "0.0.2",
+    "grunt-html-build": "~0.3.2",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }

@@ -1,0 +1,111 @@
+@import "compass/reset"
+@import "compass/css3"
+@import "variables"
+
+// THERE ARE SO MANY DIFFERENT FONT WEIGHTS  -- use them ====>  http://www.google.com/fonts#UsePlace:use
+@import url(http://fonts.googleapis.com/css?family=Bitter|Open+Sans)
+
+/* for dev purposes */
+*
+	@include appearance(none)
+
+/* custom mixins */
+@mixin font-bitter
+	font-family: 'Bitter', serif
+	font-weight: 400
+
+@mixin font-open-sans
+	font-family: 'Open Sans', sans-serif
+
+/* additional resets */
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+	min-width: 640px
+
+input:focus, select:focus, textarea:focus, button:focus, a:focus
+	outline: none
+
+/* frame */
+body
+	background: $background
+	zoom: 1
+	font-family: sans-serif
+	@include font-open-sans
+	*
+		overflow: hidden
+	h1, h2, h3, h4, h5, span, em, strong, b, u, label, form, input
+		overflow: visible
+	border-top: 5px solid red
+
+/* global styles */
+h1
+	font-size: 35px
+
+h2
+	font-size: 24px
+
+h3
+	font-size: 22px
+h4
+	font-size: 18px
+h5
+	font-size: 16px
+
+h1, h3
+	@include font-bitter
+
+/** reuseable (app-scope) classes **/
+
+
+/* buttons */
+.button
+	cursor: pointer
+	border: 0
+	border-bottom: 2px solid $dark-green
+	&:disabled
+		background: $light-green
+		color: $dark-green
+	border-bottom: 2px solid $dark-green
+	color: white
+	font-size: 16px
+	@include font-bitter
+	margin: 0
+
+.text-link
+	color: $light-green
+	&:active
+		color: $dark-green
+
+.mid-wrapper
+	text-align: center
+
+/* inputs */
+
+/* subject to change - use device queries */
+$width-name: max-width
+$mobile-width: 450px
+
+/* media queries */
+@media screen and ($width-name : $mobile-width)
+	h1
+		font-size: 28px
+
+	h2
+		font-size: 22px
+
+	h3
+		font-size: 20px
+
+	html, body
+		width: auto
+		min-width: 0
+
+	.mobile-reset
+		display: block !important
+		width: auto !important
+		float: none !important
+		clear: both !important
+
+@import "../views/**/*.sass"
