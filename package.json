@@ -1,0 +1,28 @@
+{
+  "name": "majoreviews",
+  "version": "0.0.0",
+  "description": "Major review website",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorcode/majoreviews.git"
+  },
+  "keywords": [
+    "major",
+    "review",
+    "website",
+    "college"
+  ],
+  "author": "taylorcode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorcode/majoreviews/issues"
+  },
+  "dependencies": {
+    "logfmt": "~1.1.2",
+    "express": "~4.0.0"
+  }
+}
