@@ -1,0 +1,89 @@
+header
+	background: $brand-color
+	border-bottom-style: solid
+	border-bottom-color: $brand-accent-color
+	color: white
+	> a
+		border: 1px solid white
+		display: inline-block
+	> div
+		overflow: hidden
+
+	&.mr-header-display
+		padding: 100px 150px
+		border-bottom-width: 10px
+		text-align: center
+		margin-bottom: 80px
+		span
+			display: block
+			font-size: 40px
+			&:nth-of-type(1)
+				font-size: 60px
+			&:nth-of-type(2)
+				margin-bottom: 35px
+		*
+			vertical-align: middle
+		> a
+			width: 200px
+			height: 200px
+		> div
+			margin-left: 40px
+			display: inline-block
+			text-align: left
+
+	&.mr-header-normal
+		padding: 15px
+		border-bottom-width: 4px
+		span
+			display: inline-block
+			font-size: 16px
+			vertical-align: bottom
+			line-height: 42px
+			&:nth-of-type(1)
+				font-size: 22px
+		input
+			float: right
+			border-color: white
+			background: none
+			color: white
+			@include placeholder
+				color: white
+			&:focus
+				color: $input-text-color
+				background-color: white
+				border-color: $brand-accent-color
+		> a
+			width: 42px
+			height: 42px
+			float: left
+			display: inline-block
+		> div
+			padding-left: 10px
+
+header, header a
+	@include transition-duration(.3s)
+
+header
+	@include respond-to(handhelds)
+		&.mr-header-normal
+			span
+				display: none
+
+#main-view
+	width: 960px
+	margin: 0 auto
+	padding-bottom: 40px
+	@include respond-to(handhelds)
+		width: auto
+		padding-left: 15px
+		padding-right: 15px
+	@include respond-to(small-screens)
+		width: 640px
+	@include respond-to(medium-screens)
+		width: 960px
+	@include respond-to(wide-screens)
+		width: 1080px
+
+
+
+

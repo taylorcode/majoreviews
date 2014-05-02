@@ -1,0 +1,59 @@
+/* app prefix: mr */
+/** app-scope classes **/
+
+.mr-button
+	cursor: pointer
+	border: 0
+	&:disabled
+		background: #ccc
+	color: black
+	font-size: 16px
+
+.mr-text-link
+	cursor: pointer
+	color: black
+	&:active
+		color: orange
+
+.mr-input
+	border: 2px solid $brand-accent-color
+	padding: 8px 14px
+	font-size: 19px
+	color: $input-text-color
+
+.mr-search
+	padding-right: 50px
+	@include appearance(textfield)
+
+.mr-review-list
+	@include columns(20px 2)
+	line-height: 32px
+	font-size: 18px
+
+.mr-view-wrap
+	width: 80%
+	@include respond-to(handhelds)
+		width: auto
+
+.mr-rating-title
+	float: left
+	margin-right: 30px
+	@include respond-to(handhelds)
+		float: none
+		margin-right: 0
+
+.mr-reviews
+	border: 2px solid lightgray
+	border-left: none
+	border-bottom: none
+	@include respond-to(handhelds)
+		border-right: none
+	span
+		float: left
+		margin-right: 20px
+	.mr-review
+		border-bottom: 2px solid lightgray
+		padding: 30px
+		padding-left: 0
+		&:last-child
+			border-bottom: none

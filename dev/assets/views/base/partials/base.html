@@ -1,9 +1,10 @@
-<a href="/main" class="home-logo">Major Review Website</a>
-
-<header>
-	<nav>
-		<li><a>Link one</a></li>
-	</nav>
+<header ng-class="{true: 'mr-header-display', false: 'mr-header-normal'}[currentState.name == 'main']">
+	<a ng-href="/"></a>
+	<div>
+		<span>majorreviews</span>
+		<span>Review your major</span>
+		<input type="search" class="mr-input mr-search" placeholder="civil engineering">
+	</div>
 </header>
 
-<div ui-view></div>
+<div ui-view id="main-view"></div>

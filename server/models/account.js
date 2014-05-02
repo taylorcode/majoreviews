@@ -1,4 +1,10 @@
 var mongoose = require('mongoose'),
-    AccountSchema = require('./account-schema');
+    Schema = mongoose.Schema;
 
-module.exports = mongoose.model('account', AccountSchema);
+//require('../plugins/validation-augments.js');
+
+var Account = new Schema({
+    title: String
+});
+
+module.exports = mongoose.model('account', Account);

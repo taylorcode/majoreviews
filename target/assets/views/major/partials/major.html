@@ -1,1 +1,17 @@
-Major view
+<div class="mr-view-wrap">
+	<h1 class="mr-rating-title">{{major.title}}</h1>
+	<mr-rating rating="major.overall" class="mr-rating-big"></mr-rating>
+	<p>{{major.description}}</p>
+
+	<mr-ratings metrics="major.metrics"></mr-ratings>
+
+	<h2>Reviews</h2>
+	<ul class="mr-reviews">
+		<li ng-repeat="review in major.reviews" class="mr-review">
+			<span>{{review.time}}</span>
+			<mr-rating rating="review.overall" class="mr-rating-medium"></mr-rating>
+			<p>{{review.summary}}</p>
+			<mr-ratings metrics="review.metrics"></mr-ratings>
+		</li>
+	</ul>
+</div>

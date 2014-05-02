@@ -1,0 +1,664 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"orig",
+				"origResumes"
+			],
+			[
+				"question",
+				"questionWeightSum"
+			],
+			[
+				"new",
+				"newRadio"
+			],
+			[
+				"nw",
+				"newCheckbox"
+			],
+			[
+				"selec",
+				"selectedOption"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"Test",
+				"TestRestful"
+			],
+			[
+				"Variable_List",
+				"Variable_List_Items"
+			],
+			[
+				"selected",
+				"selectedVariableItem"
+			],
+			[
+				"inline-",
+				"inline-table"
+			],
+			[
+				"push",
+				"pushDisable"
+			],
+			[
+				"production_task_",
+				"production_task_id"
+			],
+			[
+				"query_",
+				"query_db"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dev/index.html",
+			"settings":
+			{
+				"buffer_size": 1604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/middleware/account.js",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/models/school.js",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/models/review.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/models/account.js",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/routes.js",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/taylormcintyre/Documents/projects/majoreviews/dev/assets/scripts/src/routes.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/dev/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/account.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/user-main.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/company-main.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/partials/user-main.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/partials/company-main.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/job/partials/view-job.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/user.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/controllers/base.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/index.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/company.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/routes/account.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/guest.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/credentials/controllers/credentials.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/credentials/partials/signup.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/models/account-schema.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/models/company.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/models/job.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/models/user.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/routes/job.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/job/controllers/job.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/middleware/account.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/user-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/company-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/routes.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/models/account.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/routes/job-routes.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/scripts/services.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/scripts/routes.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/routes/account-routes.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/account-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/plugins/validation-augments.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/scripts/main.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/credentials/partials/login.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/job/partials/job.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/main.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/controllers/account.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/web.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/stylesheets/_main.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/jobs/controllers/jobs.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/node_modules/elmongo/node_modules/mongoose/examples/population-across-three-collections.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/job-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/job/stylesheets/job.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/jobagrob.sublime-project",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/stylesheets/styles.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/views/job/partials/job.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/jobs/partials/jobs.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/partials/account.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/controllers/resumes.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/partials/main.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/views/credentials/partials/signup.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/views/credentials/partials/login.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/user/partials/user.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/credentials/partials/credentials.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/user/user-view.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/package.json",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/resume-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/partials/resumes.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/partials/settings.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/scripts/underscore-mixins.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/account-schema.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/scripts/main.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/scripts/directives/file-uploader.coffee",
+		"/Users/taylormcintyre/Documents/projects/angular-file-upload/demo/src/com/df/angularfileupload/FileUpload.java",
+		"/Users/taylormcintyre/Documents/projects/angular-file-upload/demo/src/log4j.properties",
+		"/Users/taylormcintyre/Documents/projects/angular-file-upload/demo/war/crossdomain.xml",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/stylesheets/_variables.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/resumes/controllers/resume.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/resumes/stylesheets/_resume.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/resumes/partials/resume.html",
+		"/Users/taylormcintyre/Documents/projects/upload-test/public/javascripts/imageupload.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/json/projects.json",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/credentials/stylesheets/_credentials.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/application-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/Gruntfile.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/views/main/partials/main.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/config.rb",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/account-shared-schema.js",
+		"/Users/taylormcintyre/Desktop/Gruntfile.js",
+		"/Users/taylormcintyre/Desktop/Gruntfile.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/routes.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/schemas/account-model.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/web.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/public/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/main.coffee",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/scripts/routes.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/index.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/server/plugins/validation-regexp.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/plugins/validation-augments.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/schemas/account-abstract-model.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/README.md",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/index.html",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/Procfile",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/node_modules/grunt-sync/tasks/sync.js",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/stylesheets/styles.css",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/plugins/angular-scrollto.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/plugins/angular-anchor-scroll.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/partials/posts/1.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/package.json",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.css",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/main copy.js",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/config.rb",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/templates/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/index 2.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/public/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/samples/index.html",
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index_2.html",
+		"/Users/taylormcintyre/Library/Caches/Cleanup At Startup/com.fetchsoftworks.Fetch/Fetch Temporary Folder 1/slo_hack.js",
+		"/Users/taylormcintyre/Desktop/something.coffee",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/tags.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/javascripts/main.js",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/slider-images.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/post.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/index.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/3.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/2.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/home.html",
+		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/0.html",
+		"/Users/taylormcintyre/Desktop/code.js",
+		"/Users/taylormcintyre/Downloads/states 2/states.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/taylormcintyre/Documents/projects/jobagrob",
+			"/Users/taylormcintyre/Documents/projects/jobagrob/dev",
+			"/Users/taylormcintyre/Documents/projects/jobagrob",
+			"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/user",
+			"/Users/taylormcintyre/Documents/projects/jobagrob",
+			"/Users/taylormcintyre/Documents/projects/taylor-portfolio",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"router",
+			"state",
+			"/login",
+			"login",
+			"fishie",
+			"/login",
+			"accountRefreshInterval",
+			"nextState",
+			"data",
+			"fork baby",
+			"refork",
+			"alert",
+			"log",
+			"fish",
+			"job",
+			"jobProvider",
+			"edit",
+			"rc",
+			"companymain",
+			"run",
+			"addToSet",
+			"addTo",
+			"passport",
+			"create",
+			"trueRandom",
+			"details",
+			"accountModels",
+			"getDetails",
+			"addToset",
+			"asd",
+			"as",
+			"/jobs",
+			"jobsControll",
+			"jobsControler",
+			"/main",
+			"errors follow...",
+			"guest",
+			"account.user",
+			"!account.user.",
+			"ng-switch",
+			"getAccount()",
+			"user",
+			"getDetails",
+			"user",
+			"alert",
+			"api/account",
+			"login",
+			"comparePass",
+			"alert",
+			"enum",
+			"'Main'",
+			"accountType",
+			"search",
+			"seach",
+			"search",
+			"INCORRECT PASSWORD",
+			"width: 100%",
+			".button",
+			"button-left",
+			"width: 100%",
+			"shortDesc",
+			"shortDEsc",
+			"<form ng-submit=\"job.createJob(job)\">\n	<fieldset>\n\n		<legend>Create a new Job</legend>\n\n		<label for=\"job-title\">\n			<input id=\"job-title\" type=\"text\" ng-model=\"job.title\" placeholder=\"Title of New Job Posting\">\n		</label>\n\n		<label for=\"job-summary\">\n			<span>Summary</span>\n			<textarea id=\"job-summary\" ng-model=\"job.summary\"></textarea>\n		</label>\n\n		<label for=\"job-details\">\n			<span>Details</span>\n			<textarea id=\"job-details\" ng-model=\"job.details\"></textarea>\n		</label>\n\n		<label for=\"job-type\">\n			<span>Type</span>\n			<select id=\"job-type\" ng-model=\"job.type\" ng-init=\"job.type = job.type || info.types[0]\" ng-options=\"type as type for type in info.types\"></select>\n		</label>\n\n		<label for=\"job-industry\">\n			<span>Industry</span>\n			<select id=\"job-industry\" ng-model=\"job.industry\" ng-init=\"job.industry = job.industry || info.industries[0]\" ng-options=\"industry as industry for industry in info.industries\"></select>\n		</label>\n\n		<input type=\"submit\" value=\"Create Job\">\n\n	</fieldset>\n</form>",
+			"shortDescription",
+			"ref:",
+			"ref",
+			"_creator",
+			"ref",
+			"id: ",
+			"$promise",
+			"Jobs controller ",
+			"<button class=\"button\"",
+			"<button href",
+			"href",
+			"jobs",
+			"controllerAs",
+			"dashboard-icon",
+			"#/",
+			"#",
+			"#/",
+			"dashboard",
+			"jobs",
+			"log",
+			"signUp",
+			"signup",
+			"checklogin",
+			"req.user",
+			"check",
+			"account",
+			"checklogin",
+			"user",
+			"jobs",
+			"getAccount",
+			"req.user",
+			"check",
+			"ng-include",
+			"[ng-view]",
+			"ng-view",
+			"\"alsdkjalskdjalkdjaskd",
+			"alsdkjalskdjalkd",
+			"account",
+			"ng-view",
+			"routeChange",
+			"check",
+			"debounce",
+			"dethro",
+			"job",
+			"(",
+			"account",
+			"post",
+			"resumes",
+			"equals",
+			"atateatatatatattataatatatat",
+			"exec",
+			"Object",
+			"ObjectId",
+			"_id",
+			"log",
+			"Account",
+			"account",
+			"type",
+			"compan",
+			"user.user",
+			"details",
+			"req.body",
+			"uploader",
+			"jg",
+			"addResume"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dev/index.html",
+					"settings":
+					{
+						"buffer_size": 1604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1459,
+								1459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/middleware/account.js",
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/models/school.js",
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/models/review.js",
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/models/account.js",
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "server/routes.js",
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 153.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 297.0,
+	"status_bar_visible": true
+}
