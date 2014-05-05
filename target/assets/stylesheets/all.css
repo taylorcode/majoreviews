@@ -110,25 +110,30 @@ p {
 .mr-button {
   cursor: pointer;
   border: 0;
+  background: lightgrey;
+  border: 1px solid gray;
+  display: block;
+  text-align: center;
   color: black;
   font-size: 16px;
+  padding: 20px 0px;
 }
-/* line 7, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 11, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-button:disabled {
-  background: #cccccc;
+  background: white;
 }
 
-/* line 12, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 17, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-text-link {
   cursor: pointer;
   color: black;
 }
-/* line 15, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 20, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-text-link:active {
   color: orange;
 }
 
-/* line 18, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 23, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-input {
   border: 2px solid #76c4ff;
   padding: 8px 14px;
@@ -136,7 +141,7 @@ p {
   color: #505050;
 }
 
-/* line 24, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 29, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search {
   padding-right: 50px;
   -webkit-appearance: textfield;
@@ -144,7 +149,7 @@ p {
   appearance: textfield;
 }
 
-/* line 28, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 33, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-review-list {
   -webkit-columns: 20px 2;
   -moz-columns: 20px 2;
@@ -155,82 +160,109 @@ p {
   font-size: 18px;
 }
 
-/* line 33, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 38, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-view-wrap {
   width: 80%;
 }
 @media only screen and (max-width: 680px) {
-  /* line 33, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 38, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-view-wrap {
     width: auto;
   }
 }
 
-/* line 38, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 43, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-main-rating-area {
+  overflow: hidden;
+}
+/* line 45, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-main-rating-area mr-ratings {
+  float: left;
+}
+@media only screen and (max-width: 680px) {
+  /* line 45, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-main-rating-area mr-ratings {
+    float: none;
+  }
+}
+/* line 49, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-main-rating-area > div {
+  overflow: hidden;
+  padding-left: 20%;
+}
+@media only screen and (max-width: 680px) {
+  /* line 49, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-main-rating-area > div {
+    padding-left: 0;
+  }
+}
+
+/* line 55, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-rating-title {
   float: left;
   margin-right: 30px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 38, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 55, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-rating-title {
     float: none;
     margin-right: 0;
   }
 }
 
-/* line 45, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 62, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviews {
   border: 2px solid lightgrey;
   border-left: none;
   border-bottom: none;
 }
 @media only screen and (max-width: 680px) {
-  /* line 45, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 62, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-reviews {
     border-right: none;
   }
 }
-/* line 51, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 68, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviews span {
   float: left;
   margin-right: 20px;
 }
-/* line 54, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 71, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviews .mr-review {
   border-bottom: 2px solid lightgrey;
   padding: 30px;
   padding-left: 0;
 }
-/* line 58, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 75, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviews .mr-review:last-child {
   border-bottom: none;
 }
 
-/* line 1, ../../../dev/assets/stylesheets/_directives.sass */
-mr-rating {
-  display: block;
-}
-/* line 3, ../../../dev/assets/stylesheets/_directives.sass */
+/* line 2, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating li {
   background: gray;
   display: inline-block;
 }
-/* line 6, ../../../dev/assets/stylesheets/_directives.sass */
+/* line 5, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating li.mr-active {
   background: yellow;
 }
-/* line 9, ../../../dev/assets/stylesheets/_directives.sass */
+/* line 8, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating.mr-rating-big li {
   padding: 20px;
 }
-/* line 12, ../../../dev/assets/stylesheets/_directives.sass */
+/* line 11, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating.mr-rating-small li {
   padding: 10px;
 }
-/* line 15, ../../../dev/assets/stylesheets/_directives.sass */
+/* line 14, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating.mr-rating-medium li {
   padding: 15px;
+}
+
+/* line 17, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating, mr-ratings {
+  display: block;
 }
 
 /* line 1, ../../../dev/assets/views/base/stylesheets/_base.sass */

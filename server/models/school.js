@@ -4,14 +4,15 @@ var mongoose = require('mongoose'),
 //require('../plugins/validation-augments.js');
 
 var School = new Schema({
-    email: {
-        type: String,
-        required: true,
-        // fieldType: 'email',
-        // unique: true,
-        // maxLength: 50,
-        trim: true
-    }
+	title: {
+		type: String,
+		unique: true
+	},
+	emailDomain: String,
+	majors: [{
+		type: Schema.Types.ObjectId, 
+		ref: 'major'
+	}]
 });
 
 module.exports = mongoose.model('school', School);

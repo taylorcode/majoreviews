@@ -8,12 +8,43 @@
       url: '/',
       templateUrl: 'assets/views/main/partials/main.html',
       controller: 'Main as main',
-      parent: 'base'
-    }).state('major', {
+      parent: 'base',
+      resolve: {
+        majors: function(mrApi) {
+          return mrApi.major.query().$promise;
+        }
+      }
+    }).state('viewMajor', {
       url: '/majors/:id',
       templateUrl: 'assets/views/major/partials/major.html',
-      controller: 'Major as major',
+      controller: 'ViewMajor as viewMajor',
+      parent: 'base',
+      resolve: {
+        major: function(mrApi, $stateParams, $filter) {
+          var majorTitle;
+          majorTitle = $filter('hyphenToSpaces')($stateParams.id);
+          return mrApi.major.get({
+            _id: majorTitle
+          }).$promise;
+        }
+      }
+    }).state('request', {
+      url: '/majors/:id/review',
+      templateUrl: 'assets/views/request/partials/request.html',
+      controller: 'Request as request',
       parent: 'base'
+    }).state('review', {
+      url: '/review/:requestId',
+      templateUrl: 'assets/views/review/partials/review.html',
+      controller: 'Review as review',
+      parent: 'base',
+      resolve: {
+        request: function(mrApi, $stateParams) {
+          return mrApi.request.get({
+            _id: $stateParams.requestId
+          }).$promise;
+        }
+      }
     }).state('otherwise', {
       url: '*path'
     });
@@ -23,7 +54,8 @@
         return $(window).scrollTop(0);
       };
     });
-  }).run(function($rootScope, $timeout) {
+  }).run(function($rootScope, $timeout, mrApi) {
+    window.mrApi = mrApi;
     FastClick.attach(document.body);
     return $rootScope.$on('$stateChangeSuccess', function(ev, state) {
       return $rootScope.currentState = state;

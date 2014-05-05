@@ -1,5 +1,11 @@
 angular.module('major')
 
+.controller 'Major', ($scope, $route, $routeParams, $location, $http) ->
+    log 'Major Controller Initialized'
+    @$route = $route
+    @$location = $location
+    @$routeParams = $routeParams
+
 
 # TODO these should be moved to correct files and their load order should be changed so it works...
 
@@ -10,6 +16,10 @@ angular.module('major')
 .filter 'camelCaseToSpaces', () ->
 	(value) ->
 		value.replace(/([A-Z])/g, ' $1').toLowerCase()
+
+.filter 'hyphenToSpaces', () ->
+	(value) ->
+		value.replace '-', ' '
 
 
 .directive 'mrRating', ->
@@ -25,7 +35,7 @@ angular.module('major')
 		maxRating = scope.maxRating or 5
 
 		scope.rate = (rating) ->
-			return if not scope.allowChange
+			return if scope.allowChange isnt 'true'
 			scope.rating = rating
 			scope.ratingChanged newRating: rating
 
@@ -50,7 +60,15 @@ angular.module('major')
 	restrict: 'E'
 	scope:
 		metrics: '='
+		allowChange: '@'
 
+
+.factory 'mrApi', ($resource) ->
+	school: $resource '/api/school/:_id', _id: '@_id'
+	major: $resource '/api/major/:_id', _id: '@_id'
+	account: $resource '/api/account/:_id', _id: '@_id'
+	request: $resource '/api/request/:_id', _id: '@_id'
+	review: $resource '/api/review/:_id', _id: '@_id'
 
 # jobagrob.factory 'generator', ($resource) ->
 # 	$resource 'api/jobs/:id/generator', id: '@job'

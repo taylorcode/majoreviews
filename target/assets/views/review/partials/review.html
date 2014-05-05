@@ -1,0 +1,17 @@
+<div class="mr-view-wrap">
+	<h1>
+		<span>Review: </span>
+		{{request.major.title}}
+	</h1>
+
+	<form name="form">
+		<textarea ng-model="request.review.summary" ng-minlength="10" required></textarea>
+
+		<mr-rating rating="request.review.overall" class="mr-rating-big" allow-change="true"></mr-rating>
+
+		<mr-ratings class="mr-rating-small" metrics="request.review.metrics" allow-change="true"></mr-ratings>
+
+		<button class="mr-button" ng-disabled="form.$invalid" ng-click="review.submitReview(request)" ng-switch="updateReview"><span ng-switch-when="true">Update</span><span ng-switch-when="">Submit</span> Review</button>
+	</form>
+
+</div>

@@ -3,7 +3,12 @@
 	<mr-rating rating="major.overall" class="mr-rating-big"></mr-rating>
 	<p>{{major.description}}</p>
 
-	<mr-ratings metrics="major.metrics"></mr-ratings>
+	<div class="mr-main-rating-area">
+		<mr-ratings metrics="major.metrics" class="mr-ratings-main"></mr-ratings>
+		<div>
+			<a class="mr-button" ng-href="majors/{{major.title | camelCaseToDash}}/review">Review this Major</a>
+		</div>
+	</div>
 
 	<h2>Reviews</h2>
 	<ul class="mr-reviews">
