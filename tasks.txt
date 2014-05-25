@@ -1,0 +1,18 @@
+TODO
+FIX the review averages thing
+Need to do error states in UI ?
+move other modules out of services
+
+Chores:
+Change the endpoint for post review/:id if necessary
+Move the logic to methods?
+Move the functions out of the scope of the container?
+examing errHandler and see if they should be noDocErrorHandler or vice versa
+make sure all functions do one thing
+Validation augments for email checking, etc.
+Convert everything to coffeeScript
+Change grunt build process so it builds out coffeescript
+
+Testing:
+Test all endpoints through mrApi for proper error states
+

@@ -1,0 +1,67 @@
+mr-rating
+	float: left
+	ul
+		display: inline
+		vertical-align: middle
+	&[allow-change=true]
+		cursor: pointer
+	li
+		@include icon(star)
+		display: inline-block
+		background-size: auto 100%
+		&.mr-active
+			span
+				display: block
+				height: 100%
+				background-size: auto 100%
+				@include icon(star-active)
+	&.mr-rating-big
+		li
+			width: 30px
+			height: 30px
+			&:not(:last-child)
+				margin-right: 3px
+			@include respond-to(handhelds)
+				width: 25px
+				height: 25px
+
+	&.mr-rating-medium
+		li
+			width: 20px
+			height: 20px
+			&:not(:last-child)
+				margin-right: 3px
+
+	&.mr-rating-small
+		li
+			width: 15px
+			height: 15px
+			&:not(:last-child)
+				margin-right: 2px
+
+mr-rating, mr-ratings
+	display: block
+	&.no-score
+		.mr-score
+			display: none
+mr-ratings
+	.mr-score
+		margin-left: 4px
+		color: $subtle-text-color
+		line-height: 16px
+		font-size: 12px
+
+
+.mr-rating-aligned
+	display: table
+	mr-rating, div
+		display: table-cell
+	div
+		text-transform: capitalize
+		vertical-align: middle
+		padding-left: 8px
+	mr-rating
+		padding: 6px 0px
+
+mr-shiny-mesh
+	display: block

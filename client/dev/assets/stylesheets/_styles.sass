@@ -1,0 +1,46 @@
+/* frame */
+body
+	background: $background
+	zoom: 1
+	font-size: 16px
+	min-height: 568px
+	font-family: Source Sans Pro, sans-serif
+	color: $text-color
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+	display: none !important
+
+/* global styles */
+h1
+	font-size: 38px
+	margin: 10px 0px 20px 0px
+	@include respond-to(handhelds)
+		font-size: 27px
+		margin: 19px $side-space
+
+h2
+	font-size: 30px
+	margin-bottom: 24px
+	@include respond-to(handhelds)
+		font-size: 20px
+		margin: 18px $side-space
+
+h3
+	font-size: 22px
+
+h4
+	font-size: 18px
+
+h5
+	font-size: 16px
+
+p, strong
+	line-height: 26px
+	padding-bottom: 20px
+	clear: both
+
+a[href]
+	text-decoration: none
+	color: $text-color
+	&:hover
+		text-decoration: underline

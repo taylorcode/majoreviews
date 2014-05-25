@@ -1,0 +1,26 @@
+<div class="mr-view-wrap">
+	<h1 class="mr-rating-title">
+		<span>{{major.title}}</span>
+		<mr-rating rating="major.rating.overall" class="mr-rating-big"></mr-rating>
+	</h1>
+	<div>
+		<p class="mr-space">{{major.description}}</p>
+		<div id="main-rating-area">
+			<mr-ratings metrics="major.rating.metrics" class="mr-ratings-main mr-space"></mr-ratings>
+			<div>
+				<a class="mr-button" ng-href="majors/{{major.title | camelCaseToDash}}/review">Review this Major</a>
+			</div>
+		</div>
+	</div>
+	<h2>Reviews</h2>
+	<ul class="mr-reviews">
+		<li ng-repeat="review in major.reviews" class="mr-review">
+			<div class="mr-reviewer">
+				<mr-rating rating="review.overall" class="mr-rating-medium no-score"></mr-rating>
+				<time timeago="review.time" datetime="{{review.time}}">{{review.time}}</time>
+			</div>
+			<p>{{review.summary}}</p>
+			<mr-ratings metrics="review.metrics" class="no-score"></mr-ratings>
+		</li>
+	</ul>
+</div>

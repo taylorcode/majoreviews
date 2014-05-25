@@ -1,0 +1,10 @@
+<div class="mr-view-wrap">
+	<h1>
+		<span>Request to Manage Reviews</span>
+	</h1>
+	<strong class="mr-space">Please provide your email, and we&#39;ll send you a link so you can manage your reviews.</strong>
+	<form name="form" class="mr-form">
+		<input type="email" class="mr-input" ng-model="requestEmail" required>
+		<button class="mr-button" ng-click="manage.requestManage(requestEmail)" ng-disabled="form.$invalid">Request Link</button>
+	</form>
+</div>

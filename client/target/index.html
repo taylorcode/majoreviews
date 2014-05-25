@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="major">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="assets/stylesheets/all.css" />
+    <title>Major review website</title>
+</head>
+
+<body ontouchstart ng-controller="Major as major">
+
+    <div ui-view id="main-view"></div>
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.7/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-cookies.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+
+
+    <script>
+        (function() {
+
+            if ('dev' === 'dev') return window.log = function() {
+                console.log.apply(console, arguments);
+            }
+            window.log = function() {};
+
+        }).call(this);
+    </script>
+
+    <script type="text/javascript" src="assets/scripts/libs/fastclick.js"></script>
+    <script type="text/javascript" src="assets/scripts/libs/fss.js"></script>
+    <script type="text/javascript" src="assets/scripts/libs/jquery.timeago.js"></script>
+    <script type="text/javascript" src="assets/scripts/libs/modules/angular-ui-router.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/routes.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/components/directives/mr-ratings.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/components/directives/mr-shiny-mesh.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/components/services/mr-timer.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/filters.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/major.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/services.js"></script>
+    <script type="text/javascript" src="assets/scripts/src/underscore-mixins.js"></script>
+    <script type="text/javascript" src="assets/views/base/controllers/base.js"></script>
+    <script type="text/javascript" src="assets/views/inner/controllers/inner.js"></script>
+    <script type="text/javascript" src="assets/views/main/controllers/main.js"></script>
+    <script type="text/javascript" src="assets/views/major-option/controllers/major-option.js"></script>
+    <script type="text/javascript" src="assets/views/major/controllers/major.js"></script>
+    <script type="text/javascript" src="assets/views/manage/controllers/manage.js"></script>
+    <script type="text/javascript" src="assets/views/request-success/controllers/request-success.js"></script>
+    <script type="text/javascript" src="assets/views/request/controllers/request.js"></script>
+    <script type="text/javascript" src="assets/views/review/controllers/review.js"></script>
+    <script type="text/javascript" src="assets/views/view-major/controllers/view-major.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</body>
+
+</html>

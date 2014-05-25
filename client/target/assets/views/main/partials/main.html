@@ -1,0 +1,12 @@
+<div class="mr-view-wrap">
+	<h2>Majors</h2>
+	<div class="mr-review-list mr-space">
+		<ul>
+			<li ng-repeat="major in majors">
+				<a ng-href="majors/{{major.title | camelCaseToDash}}">{{major.title}}</a>
+				<mr-rating rating="major.rating.overall" class="mr-rating-small no-score"></mr-rating>
+			</li>
+		</ul>
+	</div>
+	<a class="mr-text-link mr-space" ng-href="manage">Manage my existing reviews</a>
+</div>

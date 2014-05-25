@@ -2,23 +2,32 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
     coffee:
-      default:
+      client:
         expand: true
-        cwd: 'dev/assets'
+        cwd: 'client/dev/assets'
         src: ['**/*.coffee']
-        dest: 'target/assets'
+        dest: 'client/target/assets'
         ext: '.js'
+      server:
+        expand: true
+        cwd: 'server/dev'
+        src: ['**/*.coffee']
+        dest: 'server/target'
+        ext: '.js'
+      entry:
+        src: 'web.coffee'
+        dest: 'web.js'
 
     compass:
       default:
         options:
-          sassDir: 'dev/assets/stylesheets'
-          cssDir: 'target/assets/stylesheets'
+          sassDir: 'client/dev/assets/stylesheets'
+          cssDir: 'client/target/assets/stylesheets'
 
     htmlbuild:
       default:
-        src: 'dev/index.html'
-        dest: 'target/'
+        src: 'client/dev/index.html'
+        dest: 'client/target/'
         options:
           beautify: true
           
@@ -26,57 +35,71 @@ module.exports = (grunt) ->
           relative: true
           scripts:
             bundle: [
-              'target/assets/**/*.js'
-              '!target/assets/scripts/routes.js'
+              'client/target/assets/scripts/libs/**/*.js'
+              'client/target/assets/scripts/src/routes.js'
+              'client/target/assets/scripts/src/**/*.js'
+              'client/target/assets/views/**/*.js'
             ]
 
           styles:
-            bundle: ['target/assets/stylesheets/**/*.css']
+            bundle: ['client/target/assets/stylesheets/**/*.css']
 
           data:
             environment: 'dev'
     sync:
-      default:
+      client:
         files: [
-          cwd: 'dev/assets'
+          cwd: 'client/dev/assets'
           src: [ # sync everytthing but coffee and sass files
             '**'
             '!**/*.coffee'
             '!**/*.sass'
           ]
-          dest: 'target/assets'
+          dest: 'client/target/assets'
+        ]
+      server:
+        files: [
+          cwd: 'server/dev'
+          src: [ # sync everytthing but coffee and sass files
+            '**'
+            '!**/*.coffee'
+          ]
+          dest: 'server/target'
         ]
 
-    clean: ['target']
+    clean: ['client/target']
 
     watch:
-      coffeescript:
-        files: ['dev/assets/**/*.coffee']
+      clientCoffee:
+        files: ['client/dev/assets/**/*.coffee']
         tasks: [
-          'coffee'
           'htmlbuild'
         ]
-
+      allCoffee:
+        files: ['**/*.coffee']
+        tasks: [
+          'coffee'
+        ]
       compass:
-        files: ['dev/assets/**/*.sass']
+        files: ['client/dev/assets/**/*.sass']
         tasks: ['compass']
 
       stylesheets:
-        files: ['dev/assets/stylesheets/**/*.sass']
+        files: ['client/dev/assets/stylesheets/**/*.sass']
         tasks: ['htmlbuild']
 
       sync_assets:
-        files: ['dev/assets/**']
+        files: ['client/dev/assets/**', 'server/dev/**',]
         tasks: ['sync']
 
       index:
-        files: ['dev/index.html']
+        files: ['client/dev/index.html']
         tasks: ['htmlbuild']
 
-      livereload:
-        files: ['target/**/*']
-        options:
-          livereload: true
+      # livereload:
+      #   files: ['client/target/**/*']
+      #   options:
+      #     livereload: true
 
 
   # load all tasks declared in devDependencies
@@ -86,6 +109,7 @@ module.exports = (grunt) ->
   
   # setup our workflow
   grunt.registerTask 'default', [
+    'clean'
     'coffee'
     'compass'
     'sync'

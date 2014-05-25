@@ -1,0 +1,1220 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+/* line 17, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@-webkit-keyframes incredibleHulk {
+  /* line 62, ../../../dev/assets/stylesheets/_mixins.sass */
+  50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes incredibleHulk {
+  /* line 62, ../../../dev/assets/stylesheets/_mixins.sass */
+  50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes incredibleHulk {
+  /* line 62, ../../../dev/assets/stylesheets/_mixins.sass */
+  50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes baseViewMoveUpLogo {
+  /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 68, ../../../dev/assets/stylesheets/_mixins.sass */
+  100% {
+    margin-top: -310px;
+  }
+}
+
+@-moz-keyframes baseViewMoveUpLogo {
+  /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 68, ../../../dev/assets/stylesheets/_mixins.sass */
+  100% {
+    margin-top: -310px;
+  }
+}
+
+@keyframes baseViewMoveUpLogo {
+  /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 68, ../../../dev/assets/stylesheets/_mixins.sass */
+  100% {
+    margin-top: -310px;
+  }
+}
+
+/* resets */
+/* line 2, ../../../dev/assets/stylesheets/_resets.sass */
+* {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+
+/* line 8, ../../../dev/assets/stylesheets/_resets.sass */
+input, select, textarea, button, a {
+  outline: none;
+}
+
+/* line 11, ../../../dev/assets/stylesheets/_resets.sass */
+input, button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../../../dev/assets/stylesheets/_resets.sass */
+textarea {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 16, ../../../dev/assets/stylesheets/_resets.sass */
+body {
+  zoom: 1;
+}
+
+/* frame */
+/* line 20, ../../../dev/assets/stylesheets/_resets.sass */
+body {
+  background: #fafafc;
+  zoom: 1;
+  font-family: sans-serif;
+}
+
+/* frame */
+/* line 2, ../../../dev/assets/stylesheets/_styles.sass */
+body {
+  background: #fafafc;
+  zoom: 1;
+  font-size: 16px;
+  min-height: 568px;
+  font-family: Source Sans Pro, sans-serif;
+  color: #2c2629;
+}
+
+/* line 10, ../../../dev/assets/stylesheets/_styles.sass */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* global styles */
+/* line 14, ../../../dev/assets/stylesheets/_styles.sass */
+h1 {
+  font-size: 38px;
+  margin: 10px 0px 20px 0px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 14, ../../../dev/assets/stylesheets/_styles.sass */
+  h1 {
+    font-size: 27px;
+    margin: 19px 11px;
+  }
+}
+
+/* line 21, ../../../dev/assets/stylesheets/_styles.sass */
+h2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 21, ../../../dev/assets/stylesheets/_styles.sass */
+  h2 {
+    font-size: 20px;
+    margin: 18px 11px;
+  }
+}
+
+/* line 28, ../../../dev/assets/stylesheets/_styles.sass */
+h3 {
+  font-size: 22px;
+}
+
+/* line 31, ../../../dev/assets/stylesheets/_styles.sass */
+h4 {
+  font-size: 18px;
+}
+
+/* line 34, ../../../dev/assets/stylesheets/_styles.sass */
+h5 {
+  font-size: 16px;
+}
+
+/* line 37, ../../../dev/assets/stylesheets/_styles.sass */
+p, strong {
+  line-height: 26px;
+  padding-bottom: 20px;
+  clear: both;
+}
+
+/* line 42, ../../../dev/assets/stylesheets/_styles.sass */
+a[href] {
+  text-decoration: none;
+  color: #2c2629;
+}
+/* line 45, ../../../dev/assets/stylesheets/_styles.sass */
+a[href]:hover {
+  text-decoration: underline;
+}
+
+/* app prefix: mr */
+/*app-scope classes */
+/* line 4, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-button {
+  cursor: pointer;
+  width: 100%;
+  background: #03a588;
+  text-decoration: none;
+  border: none;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0px;
+}
+/* line 11, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-button[href] {
+  color: white;
+}
+/* line 15, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-button:disabled {
+  opacity: 0.5;
+}
+
+/* line 20, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-text-link {
+  cursor: pointer;
+  color: black;
+}
+/* line 23, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-text-link:active {
+  color: orange;
+}
+
+/* line 26, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-input {
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  padding: 11px 14px;
+  border: 1px solid #f1f1f1;
+  font-size: 19px;
+  color: #505050;
+  margin: 0;
+}
+@media only screen and (max-width: 680px) {
+  /* line 26, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-input {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* line 40, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-image: url(../media/icons/magnifier.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 55%;
+}
+@media only screen and (min-width: 681px) {
+  /* line 40, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-search {
+    padding-right: 45px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 40, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-search {
+    background-position: 10px 55%;
+    padding-left: 45px;
+  }
+}
+
+/* line 50, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-arrow {
+  background-position: center;
+  background-image: url(../media/icons/arrow.svg);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  font-size: 0;
+  display: inline-block;
+}
+
+/* line 56, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area {
+  position: relative;
+  overflow: visible;
+}
+/* line 59, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area input {
+  position: relative;
+}
+/* line 61, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area div {
+  position: absolute;
+  width: 100%;
+}
+/* line 64, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area ul {
+  border: 1px solid #b4b8b5;
+  border-top: none;
+  background: white;
+}
+/* line 68, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area ul li {
+  cursor: pointer;
+  color: black;
+}
+/* line 71, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area ul li:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
+/* line 73, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area ul li a {
+  padding: 15px 20px;
+  display: block;
+}
+/* line 76, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area ul li a:hover {
+  background: #f1f1f1;
+}
+/* line 78, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area .mr-x {
+  display: none;
+  position: absolute;
+  text-indent: -9999px;
+  font-size: 0;
+  right: 46px;
+  cursor: pointer;
+  top: 17.5px;
+  width: 11px;
+  height: 11px;
+  background-image: url(../media/icons/x.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+/* line 89, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-search-area .mr-x.enabled {
+  display: inline-block;
+}
+@media only screen and (max-width: 680px) {
+  /* line 78, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-search-area .mr-x {
+    right: 18px;
+  }
+}
+
+/* line 94, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-review-list {
+  -webkit-columns: 20px 2;
+  -moz-columns: 20px 2;
+  -ms-columns: 20px 2;
+  -o-columns: 20px 2;
+  columns: 20px 2;
+  line-height: 32px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 94, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-review-list {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    -ms-columns: 1;
+    -o-columns: 1;
+    columns: 1;
+  }
+}
+/* line 101, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-review-list li a {
+  margin-right: 10px;
+}
+/* line 103, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-review-list mr-rating {
+  float: none;
+  display: inline-block;
+}
+
+/* line 107, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-view-wrap {
+  width: 80%;
+}
+@media only screen and (min-width: 681px) and (max-width: 999px) {
+  /* line 107, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-view-wrap {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 107, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-view-wrap {
+    width: auto;
+  }
+}
+
+/* line 114, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-rating-title {
+  display: table;
+}
+/* line 116, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-rating-title .mr-score {
+  font-size: 18px;
+}
+/* line 118, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-rating-title > span, .mr-rating-title mr-rating {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 680px) {
+  /* line 118, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-rating-title > span, .mr-rating-title mr-rating {
+    display: block;
+  }
+}
+/* line 124, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-rating-title > span {
+  padding-right: 10px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 127, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-rating-title mr-rating {
+    margin-top: 10px;
+  }
+}
+
+/* line 130, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-space {
+  display: block;
+}
+@media only screen and (max-width: 680px) {
+  /* line 130, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-space {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+
+/* line 136, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-reviewer {
+  margin-bottom: 10px;
+  display: table;
+}
+/* line 139, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-reviewer time, .mr-reviewer mr-rating {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 142, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-reviewer time {
+  padding-left: 8px;
+}
+
+/* line 146, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-input-area textarea {
+  min-height: 150px;
+}
+
+/* line 149, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-form {
+  margin: 20px 0px;
+}
+/* line 151, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-form button {
+  margin-top: 20px;
+}
+
+/* line 1, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating {
+  float: left;
+}
+/* line 3, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating ul {
+  display: inline;
+  vertical-align: middle;
+}
+/* line 6, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating[allow-change=true] {
+  cursor: pointer;
+}
+/* line 8, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating li {
+  background-image: url(../media/icons/star.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: auto 100%;
+}
+/* line 13, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating li.mr-active span {
+  display: block;
+  height: 100%;
+  background-size: auto 100%;
+  background-image: url(../media/icons/star-active.svg);
+  background-repeat: no-repeat;
+}
+/* line 19, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-big li {
+  width: 30px;
+  height: 30px;
+}
+/* line 22, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-big li:not(:last-child) {
+  margin-right: 3px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 19, ../../../dev/assets/stylesheets/_directives.sass */
+  mr-rating.mr-rating-big li {
+    width: 25px;
+    height: 25px;
+  }
+}
+/* line 29, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-medium li {
+  width: 20px;
+  height: 20px;
+}
+/* line 32, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-medium li:not(:last-child) {
+  margin-right: 3px;
+}
+/* line 36, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-small li {
+  width: 15px;
+  height: 15px;
+}
+/* line 39, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.mr-rating-small li:not(:last-child) {
+  margin-right: 2px;
+}
+
+/* line 42, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating, mr-ratings {
+  display: block;
+}
+/* line 45, ../../../dev/assets/stylesheets/_directives.sass */
+mr-rating.no-score .mr-score, mr-ratings.no-score .mr-score {
+  display: none;
+}
+
+/* line 48, ../../../dev/assets/stylesheets/_directives.sass */
+mr-ratings .mr-score {
+  margin-left: 4px;
+  color: #b4b8b5;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+/* line 55, ../../../dev/assets/stylesheets/_directives.sass */
+.mr-rating-aligned {
+  display: table;
+}
+/* line 57, ../../../dev/assets/stylesheets/_directives.sass */
+.mr-rating-aligned mr-rating, .mr-rating-aligned div {
+  display: table-cell;
+}
+/* line 59, ../../../dev/assets/stylesheets/_directives.sass */
+.mr-rating-aligned div {
+  text-transform: capitalize;
+  vertical-align: middle;
+  padding-left: 8px;
+}
+/* line 63, ../../../dev/assets/stylesheets/_directives.sass */
+.mr-rating-aligned mr-rating {
+  padding: 6px 0px;
+}
+
+/* line 66, ../../../dev/assets/stylesheets/_directives.sass */
+mr-shiny-mesh {
+  display: block;
+}
+
+/* line 5, ../../../dev/assets/views/base/stylesheets/_base.sass */
+.body {
+  width: 960px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 680px) {
+  /* line 5, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .body {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 681px) and (max-width: 999px) {
+  /* line 5, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .body {
+    width: 640px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1259px) {
+  /* line 5, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .body {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  /* line 5, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .body {
+    width: 1080px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* line 19, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    margin-top: -45px;
+  }
+  /* line 24, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav.active {
+    margin-top: 0;
+  }
+}
+
+/* line 28, ../../../dev/assets/views/base/stylesheets/_base.sass */
+[ui-view] [ui-view] {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+@media only screen and (max-width: 680px) {
+  /* line 32, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view.ng-enter {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /* line 37, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view.ng-leave {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /* line 43, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .top-bar {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /* line 47, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-header-normal .top-bar {
+    margin-top: -302px;
+  }
+  /* line 51, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view.ng-enter .mr-header-normal .top-bar {
+    display: none;
+  }
+  /* line 55, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-search-area {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /* line 59, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-header-normal .mr-search-area {
+    margin-top: 45px;
+  }
+  /* line 63, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .inner-state-bar {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /* line 68, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-header-display .inner-state-bar {
+    margin-top: -45px;
+  }
+  /* line 73, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view.ng-enter .mr-header-display .inner-state-bar {
+    display: none;
+  }
+  /* line 75, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view [ui-view] {
+    width: 100%;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  /* line 82, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-forward .ng-leave {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  /* line 84, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-forward .ng-leave-active {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  /* line 86, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-forward .ng-enter {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  /* line 88, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-forward .ng-enter-active {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  /* line 92, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-back .ng-leave {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  /* line 94, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-back .ng-leave-active {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  /* line 96, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-back .ng-enter {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  /* line 98, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  [ui-view]#main-view .mr-going-back .ng-enter-active {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 101, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header {
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+/* line 105, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header nav {
+  display: inline-block;
+  position: relative;
+}
+/* line 109, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .service-logo {
+  background-image: url(../media/logos/majoreviews.svg);
+  background-repeat: no-repeat;
+  width: 346px;
+  margin-bottom: 15px;
+}
+/* line 112, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .service-logo:after {
+  content: "";
+  display: block;
+  padding-top: 17.1%;
+}
+@media only screen and (max-width: 680px) {
+  /* line 109, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .service-logo {
+    margin-bottom: 0px;
+  }
+}
+/* line 120, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .service-phrase {
+  background-image: url(../media/logos/phrase.svg);
+  background-repeat: no-repeat;
+  width: 285px;
+}
+/* line 123, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .service-phrase:after {
+  content: "";
+  display: block;
+  padding-top: 11.3%;
+}
+@media only screen and (max-width: 680px) {
+  /* line 120, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .service-phrase {
+    margin-bottom: 32px;
+  }
+}
+/* line 130, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .service-logo, header .service-phrase {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  background-size: 100%;
+  background-position: center;
+}
+@media only screen and (max-width: 680px) {
+  /* line 130, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .service-logo, header .service-phrase {
+    width: 220px;
+  }
+}
+/* line 138, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .inner-state-bar {
+  background: #2c2629;
+  color: white;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+@media only screen and (max-width: 680px) {
+  /* line 138, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .inner-state-bar {
+    display: block;
+  }
+}
+/* line 148, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .inner-state-bar span {
+  display: block;
+  line-height: 45px;
+  text-align: center;
+}
+/* line 152, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .inner-state-bar a {
+  display: none;
+}
+/* line 155, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .home-icon {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 159, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .home-icon mr-shiny-mesh {
+  width: 180px;
+  height: 180px;
+}
+/* line 162, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header .home-icon span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../media/icons/apple.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 171, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+@media only screen and (max-width: 680px) {
+  /* line 178, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header nav {
+    display: block;
+  }
+  /* line 180, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .top-bar {
+    text-align: center;
+  }
+  /* line 182, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header .top-bar .home-icon, header .top-bar .service-logo, header .top-bar .service-phrase {
+    display: inline-block;
+  }
+}
+/* line 186, ../../../dev/assets/views/base/stylesheets/_base.sass */
+header.mr-header-display.body {
+  width: auto !important;
+}
+@media only screen and (min-width: 681px) {
+  /* line 186, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display.body {
+    margin-left: -60px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 681px) {
+  /* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display {
+    padding: 100px 0px;
+    border-bottom-width: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* line 199, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display * {
+    vertical-align: top;
+  }
+  /* line 201, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display nav {
+    margin-left: 36px;
+    margin-top: 36px;
+    text-align: left;
+  }
+  /* line 205, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display .home-icon {
+    margin-left: -50px;
+  }
+  /* line 207, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-display .mr-search-area {
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 681px) {
+  /* line 213, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal {
+    padding: 15px;
+    border-bottom-width: 4px;
+  }
+  /* line 217, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal nav {
+    padding-left: 14px;
+    display: block;
+    margin-left: 45px;
+  }
+  /* line 221, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal .home-icon {
+    float: left;
+  }
+  /* line 223, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal .home-icon mr-shiny-mesh {
+    width: 45px;
+    height: 45px;
+  }
+  /* line 226, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal .service-logo {
+    width: 200px;
+    padding-top: 16px;
+    margin-bottom: 0;
+  }
+  /* line 230, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal .service-phrase {
+    display: none;
+  }
+  /* line 232, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  header.mr-header-normal .mr-search-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+.previous-state-nav {
+  cursor: pointer;
+  color: #b4b8b5;
+}
+@media only screen and (max-width: 680px) {
+  /* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 681px) {
+  /* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav {
+    display: none;
+  }
+  /* line 246, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav.active {
+    display: block;
+  }
+}
+/* line 249, ../../../dev/assets/views/base/stylesheets/_base.sass */
+.previous-state-nav:hover {
+  color: #2c2629;
+}
+@media only screen and (min-width: 681px) {
+  /* line 252, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav:hover .mr-arrow {
+    background-image: url(../media/icons/arrow-pushed.svg);
+    background-repeat: no-repeat;
+  }
+}
+/* line 255, ../../../dev/assets/views/base/stylesheets/_base.sass */
+.previous-state-nav .mr-arrow {
+  width: 44px;
+  height: 45px;
+  float: left;
+}
+@media only screen and (min-width: 681px) {
+  /* line 255, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav .mr-arrow {
+    background-image: url(../media/icons/arrow-subtle.svg);
+    background-repeat: no-repeat;
+    margin-left: -44px;
+  }
+}
+/* line 262, ../../../dev/assets/views/base/stylesheets/_base.sass */
+.previous-state-nav div {
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 43px;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 681px) {
+  /* line 262, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  .previous-state-nav div {
+    display: block;
+  }
+}
+
+/* line 2, ../../../dev/assets/views/review/stylesheets/_review.sass */
+#leave-review > div {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+
+/* line 1, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+.mr-reviews {
+  background: #fefefe;
+}
+@media only screen and (min-width: 681px) {
+  /* line 1, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  .mr-reviews {
+    padding: 20px;
+    border-left: 1px solid #f1f1f1;
+  }
+}
+
+/* line 7, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+.mr-review {
+  margin-bottom: 20px;
+}
+/* line 9, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+.mr-review:not(:first-child) {
+  padding-top: 20px;
+  border-top: 1px solid #f1f1f1;
+}
+@media only screen and (max-width: 680px) {
+  /* line 7, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  .mr-review {
+    padding: 20px 11px;
+  }
+}
+
+/* line 15, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+#main-rating-area {
+  margin-bottom: 30px;
+  clear: left;
+}
+@media only screen and (max-width: 680px) {
+  /* line 19, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  #main-rating-area mr-ratings {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 681px) {
+  /* line 15, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  #main-rating-area {
+    display: table;
+    width: 100%;
+  }
+  /* line 24, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  #main-rating-area mr-ratings, #main-rating-area div {
+    display: table-cell;
+  }
+  /* line 26, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  #main-rating-area a {
+    position: relative;
+    top: 14px;
+  }
+}

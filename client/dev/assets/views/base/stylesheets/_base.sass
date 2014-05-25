@@ -1,0 +1,270 @@
+*
+	//box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75)
+
+
+.body
+	width: 960px
+	margin: 0 auto
+	@include respond-to(handhelds)
+		width: auto
+	@include respond-to(small-screens)
+		width: 640px
+	@include respond-to(medium-screens)
+		width: 960px
+	@include respond-to(wide-screens)
+		width: 1080px
+
+$view-transition-duration: .5s
+
+.previous-state-nav
+	@include respond-to(handhelds)
+		@include hardware-accelerate
+		@include transition-duration($view-transition-duration)
+		margin-top: -$top-bar-height
+		&.active
+			margin-top: 0
+
+[ui-view]
+	[ui-view]
+		@include hardware-accelerate
+	&#main-view
+		@include respond-to(handhelds)
+			&.ng-enter
+				@include transition-duration($view-transition-duration)
+
+			&.ng-enter-active
+
+			&.ng-leave
+				@include transition-duration($view-transition-duration)
+
+			&.ng-leave-active
+
+			// top bar animation
+			.top-bar
+				@include hardware-accelerate
+				@include transition-duration($view-transition-duration)
+			.mr-header-normal
+				.top-bar
+					margin-top: -302px
+			&.ng-enter
+				.mr-header-normal
+					.top-bar
+						display: none
+
+			// search area bar animation
+			.mr-search-area
+				@include hardware-accelerate
+				@include transition-duration($view-transition-duration)
+			.mr-header-normal
+				.mr-search-area
+					margin-top: $top-bar-height
+
+			// inner state bar animation
+			.inner-state-bar
+				@include hardware-accelerate
+				@include transition-duration($view-transition-duration)
+
+			.mr-header-display
+				.inner-state-bar
+					margin-top: -$top-bar-height
+
+			&.ng-enter
+				.mr-header-display
+					.inner-state-bar
+						display: none
+			[ui-view]
+				width: 100%
+				@include transition-duration($view-transition-duration)
+				position: absolute
+				left: 0
+
+			.mr-going-forward
+				.ng-leave
+					@include transform(translateX(0))
+				.ng-leave-active
+					@include transform(translateX(-100%))
+				.ng-enter
+					@include transform(translateX(100%))
+				.ng-enter-active
+					@include transform(translateX(0))
+
+			.mr-going-back
+				.ng-leave
+					@include transform(translateX(0))
+				.ng-leave-active
+					@include transform(translateX(100%))
+				.ng-enter
+					@include transform(translateX(-100%))
+				.ng-enter-active
+					@include transform(translateX(0))
+
+header
+	background: white
+	position: relative
+	z-index: 1
+	nav
+		display: inline-block
+		position: relative
+
+	.service-logo
+		@include logo(majoreviews)
+		width: 346px
+		&:after
+			content: ''
+			display: block
+			padding-top: 17.1%
+		margin-bottom: 15px
+		@include respond-to(handhelds)
+			margin-bottom: 0px
+
+	.service-phrase
+		@include logo(phrase)
+		width: 285px
+		&:after
+			content: ''
+			display: block
+			padding-top: 11.3%
+		@include respond-to(handhelds)
+			margin-bottom: 32px
+
+	.service-logo, .service-phrase
+		display: block
+		@include hide-text
+		background-size: 100%
+		background-position: center
+		@include respond-to(handhelds)
+			width: 220px
+
+	.inner-state-bar
+		background: $text-color
+		color: white
+		display: none
+		@include respond-to(handhelds)
+			display: block
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 1
+		span
+			display: block
+			line-height: $top-bar-height
+			text-align: center
+		a
+			display: none
+
+	.home-icon
+		position: relative
+		display: inline-block
+		overflow: hidden
+		mr-shiny-mesh
+			width: 180px
+			height: 180px
+		span
+			position: absolute
+			left: 0
+			display: inline-block
+			width: 100%
+			height: 100%
+			@include icon(apple)
+			background-size: 100% 100%
+
+	&:after
+		content: ''
+		display: block
+		height: 0
+		clear: both
+
+	@include respond-to(handhelds)
+		nav
+			display: block
+		.top-bar
+			text-align: center
+			.home-icon, .service-logo, .service-phrase
+				display: inline-block
+
+	&.mr-header-display
+		&.body
+			width: auto !important
+			@include respond-to(except-handhelds)
+				margin-left: -60px
+
+		@include respond-to(handhelds)
+			padding-top: 30px
+
+		@include respond-to(except-handhelds)
+			padding: 100px 0px
+			border-bottom-width: 10px
+			text-align: center
+			margin-bottom: 40px
+			*
+				vertical-align: top
+			nav
+				margin-left: 36px
+				margin-top: 36px
+				text-align: left
+			.home-icon
+				margin-left: -50px
+			.mr-search-area
+				margin-top: 40px
+				.mr-input
+					//border: none
+					//border-bottom: 2px solid $text-color
+
+	&.mr-header-normal
+		@include respond-to(except-handhelds)
+			padding: 15px
+			border-bottom-width: 4px
+			nav
+				padding-left: 14px
+				display: block
+				margin-left: $top-bar-height
+			.home-icon
+				float: left
+				mr-shiny-mesh
+					width: $top-bar-height
+					height: $top-bar-height
+			.service-logo
+				width: 200px
+				padding-top: 16px
+				margin-bottom: 0
+			.service-phrase
+				display: none
+			.mr-search-area
+				position: absolute
+				top: 0
+				right: 0
+
+$prev-button-width: 44px
+.previous-state-nav
+	cursor: pointer
+	@include respond-to(handhelds)
+		position: fixed
+		top: 0
+		z-index: 1
+	@include respond-to(except-handhelds)
+		display: none
+		&.active
+			display: block
+	color: $subtle-text-color
+	&:hover
+		color: $text-color
+		@include respond-to(except-handhelds)
+			.mr-arrow
+				@include icon(arrow-pushed)
+	@include respond-to(except-handhelds)
+	.mr-arrow
+		@include respond-to(except-handhelds)
+			@include icon(arrow-subtle)
+			margin-left: -$prev-button-width
+		width: $prev-button-width
+		height: $top-bar-height
+		float: left
+	div
+		padding-top: 2px
+		font-size: 14px
+		line-height: $top-bar-height - 2px
+		display: none
+		cursor: pointer
+		@include respond-to(except-handhelds)
+			display: block
+

@@ -2,10 +2,10 @@
 	"folders":
 	[
 		{
-			"path": "dev"
+			"path": "client"
 		},
 		{
-			"path": "server"
+			"path": "server/dev"
 		}
 	]
 }

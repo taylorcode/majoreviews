@@ -1,0 +1,36 @@
+<header ng-class="{true: 'mr-header-display', false: 'mr-header-normal'}[$state.previous == null]" mr-scroll-anchor>
+	<div class="body">
+		<div class="top-bar">
+			<div class="home-icon">
+				<a ng-href="/">
+					<span></span>
+					<mr-shiny-mesh resize="$state.current.name"></mr-shiny-mesh>
+				</a>
+			</div>
+			<nav>
+				<div class="service-logo">majorreviews</div>
+				<div></div>
+				<div class="service-phrase">Review your major.</div>
+				<div class="mr-search-area">
+					<span class="mr-x" ng-click="search=''" ng-class="{enabled: search}">close</span>
+					<input type="text" class="mr-input mr-search" ng-model="search" placeholder="civil engineering">
+					<div ng-show="filteredMajors.length > 0 && search">
+						<ul>
+							<li ng-repeat="major in (filteredMajors = (majors | filter:search))"><a ng-href="majors/{{major.title | camelCaseToDash}}">{{major.title}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="inner-state-bar">
+		<span ng-if="media.sizes.handhelds">{{$state.current.data.title}}</span>
+	</div>
+</header>
+<div ng-class="{true: 'mr-going-back', false: 'mr-going-forward'}[backwards]">
+	<div class="previous-state-nav body" ng-class="{active: $state.previous != null}" ng-click="$state.go($state.previous, $previousStateParams)">
+		<a class="mr-arrow"></a>
+		<div ng-if="!media.sizes.handhelds">{{$state.previous.data.title}}</div>
+	</div>
+	<div ui-view class="body"></div>
+</div>

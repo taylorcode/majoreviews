@@ -1,0 +1,8 @@
+<ul>
+	{{#each this}}
+	<li>
+		<span>{{this.major.title}}</span>
+		<a href="http://localhost:5000/review/{{this._id}}">Review This Major</a>
+	</li>
+	{{/each}}
+</ul>

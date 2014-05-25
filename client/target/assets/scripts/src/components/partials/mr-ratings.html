@@ -1,0 +1,6 @@
+<ul>
+	<li ng-repeat="(metric, rating) in metrics" class="mr-rating mr-rating-aligned">
+		<mr-rating rating="$parent.metrics[metric]" class="mr-rating-small" allow-change="{{allowChange}}"></mr-rating>
+		<div>{{metric | camelCaseToSpaces}}</div>
+	</li>
+</ul>

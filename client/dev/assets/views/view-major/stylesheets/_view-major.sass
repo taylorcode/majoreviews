@@ -1,0 +1,28 @@
+.mr-reviews
+	background: $subtle-background-contrast
+	@include respond-to(except-handhelds)
+		padding: 20px
+		border-left: 1px solid $separator-color
+
+.mr-review
+	margin-bottom: 20px
+	&:not(:first-child)
+		padding-top: 20px
+		border-top: 1px solid $separator-color
+	@include respond-to(handhelds)
+		padding: 20px 11px
+
+#main-rating-area
+	margin-bottom: 30px
+	clear: left
+	@include respond-to(handhelds)
+		mr-ratings
+			margin-bottom: 20px
+	@include respond-to(except-handhelds)
+		display: table
+		width: 100%
+		mr-ratings, div
+			display: table-cell
+		a
+			position: relative
+			top: 14px

@@ -60,51 +60,37 @@
 	"buffers":
 	[
 		{
-			"file": "dev/index.html",
+			"contents": "build process for auto creating views with controllers/ partials/ stylesheets initialized",
 			"settings":
 			{
-				"buffer_size": 1604,
+				"buffer_size": 89,
+				"line_ending": "Unix",
+				"name": "build process for auto creating views with control"
+			}
+		},
+		{
+			"file": "server/dev/api/manage.coffee",
+			"settings":
+			{
+				"buffer_size": 1935,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/middleware/account.js",
+			"file": "server/target/api/manage.js",
 			"settings":
 			{
-				"buffer_size": 23,
+				"buffer_size": 2622,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/models/school.js",
+			"contents": "Taylor is a minimalist designer and a careful programmer. He wants to contribute beautiful, simple things to the world. He is happiest when he is learning, creating, listening to EDM, or drinking wine with his friends and family. In his classes, Taylor discovered and developed his aptitudes. Outside of class, he spent most of his free time working on personal projects; Taylor loves to learn, to think, and to create. He worked as the Web Development Manager for University Graphic Systems his Junior year, where he wrote software for the company and managed employees. Last year, he was the developer on the team that won the Cal Poly Evernote Hackathon. This year he was a mentor in the competition. He currently works for Rosetta as a front-end web developer. Here, he is known to \"engineer\" solutions, instead of simply solving them.\n\nTaylor is moving to the Bay Area to work for a startups, where he wants to impact the business with his talent and ",
 			"settings":
 			{
-				"buffer_size": 363,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/models/review.js",
-			"settings":
-			{
-				"buffer_size": 215,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/models/account.js",
-			"settings":
-			{
-				"buffer_size": 218,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/routes.js",
-			"settings":
-			{
-				"buffer_size": 212,
-				"line_ending": "Unix"
+				"buffer_size": 956,
+				"line_ending": "Unix",
+				"name": "Taylor is a minimalist designer and a careful prog"
 			}
 		}
 	],
@@ -132,8 +118,54 @@
 	},
 	"file_history":
 	[
-		"/Users/taylormcintyre/Documents/projects/majoreviews/dev/assets/scripts/src/routes.coffee",
-		"/Users/taylormcintyre/Documents/projects/majoreviews/dev/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/view-major/partials/view-major.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_classes.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_directives.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_styles.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/scripts/src/components/partials/mr-ratings.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_variables.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/scripts/src/routes.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_media.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request/controllers/request.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request-success/partials/request-success.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_fonts.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/inner/partials/inner.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request/partials/request.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/main/partials/main.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/scripts/src/components/partials/mr-rating.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/scripts/src/services.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/inner/stylesheets/_inner.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/major/partials/major.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/base/stylesheets/_base.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/all.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/major-option/controllers/major-option.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request-success/controllers/request-success.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/review/controllers/review.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/major-option/partials/major-option.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/manage/controllers/manage.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/target/assets/views/major/partials/view-major.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/target/assets/views/major/partials/major.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/view-major/controllers/view-major.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/inner/controllers/inner.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/major/controllers/major.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/target/index.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/modules/handlebars-loader.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/majoreviews.sublime-project",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/Gruntfile.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/major/stylesheets/_major.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/main/controllers/main.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/index.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/base/controllers/base.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/api/major.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_resets.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/stylesheets/_main.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_mixins.sass",
+		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/stylesheets/styles.css",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/inner/stylesheets/inner.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/routes.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/dependencies.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/target/api/major.js",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/account.html",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/user-main.coffee",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/company-main.coffee",
@@ -172,7 +204,6 @@
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/controllers/main.coffee",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/account/controllers/account.coffee",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/web.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/main/stylesheets/_main.sass",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/jobs/controllers/jobs.coffee",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/node_modules/elmongo/node_modules/mongoose/examples/population-across-three-collections.js",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/job-model.js",
@@ -214,52 +245,7 @@
 		"/Users/taylormcintyre/Documents/projects/jobagrob/config.rb",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/server/schemas/account-shared-schema.js",
 		"/Users/taylormcintyre/Desktop/Gruntfile.js",
-		"/Users/taylormcintyre/Desktop/Gruntfile.coffee",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/routes.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/schemas/account-model.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/web.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/public/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/main.coffee",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/scripts/routes.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/index.html",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/server/plugins/validation-regexp.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/plugins/validation-augments.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob-old/server/schemas/account-abstract-model.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/README.md",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/target/index.html",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/Procfile",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/node_modules/grunt-sync/tasks/sync.js",
-		"/Users/taylormcintyre/Documents/projects/jobagrob/target/assets/stylesheets/styles.css",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/plugins/angular-scrollto.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/plugins/angular-anchor-scroll.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/partials/posts/1.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/package.json",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.css",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/main copy.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/config.rb",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/templates/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/index 2.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/public/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/samples/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index_2.html",
-		"/Users/taylormcintyre/Library/Caches/Cleanup At Startup/com.fetchsoftworks.Fetch/Fetch Temporary Folder 1/slo_hack.js",
-		"/Users/taylormcintyre/Desktop/something.coffee",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/tags.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/javascripts/main.js",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/slider-images.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/post.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/index.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/3.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/2.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/home.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/0.html",
-		"/Users/taylormcintyre/Desktop/code.js",
-		"/Users/taylormcintyre/Downloads/states 2/states.js"
+		"/Users/taylormcintyre/Desktop/Gruntfile.coffee"
 	],
 	"find":
 	{
@@ -267,9 +253,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/taylormcintyre/Documents/projects/majoreviews",
 			"/Users/taylormcintyre/Documents/projects/jobagrob",
 			"/Users/taylormcintyre/Documents/projects/jobagrob/dev",
 			"/Users/taylormcintyre/Documents/projects/jobagrob",
@@ -284,8 +271,66 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"router",
-			"state",
+			"time",
+			"mr-rating-title",
+			"mr-title",
+			"mr-review-list",
+			"mr-arrow",
+			"mr-reviews",
+			"rating-area",
+			"spacing",
+			"mr-rating-title",
+			"area",
+			"mr-rating-area",
+			"active",
+			"$location.path '",
+			"$location",
+			"manage my existing",
+			"adasdasdasdasdasd",
+			"enter",
+			"onEnter",
+			"prevState",
+			"major",
+			"'major'",
+			"'major''",
+			"'major;",
+			"major",
+			"parent: 'major",
+			"parent: 'inner'",
+			"parent: 'innermajor'",
+			"parent: 'inner'",
+			"inner",
+			"controller",
+			"major",
+			"controller: 'Major",
+			"controller: 'major",
+			"'major'",
+			"inner",
+			"nextState",
+			"$filter",
+			"border-color",
+			"brand",
+			"mr-search",
+			"brand",
+			"45px",
+			"90px",
+			"hide",
+			"text-indent: -99",
+			"text-indent",
+			"magni",
+			"mani",
+			"top-nav",
+			"top-navav",
+			"top-nav",
+			"handhelds",
+			"home-log",
+			"200",
+			"home-logo",
+			"home-lock",
+			"arguments",
+			"curry",
+			"delete",
+			"req.params.id",
 			"/login",
 			"login",
 			"fishie",
@@ -353,65 +398,7 @@
 			"_creator",
 			"ref",
 			"id: ",
-			"$promise",
-			"Jobs controller ",
-			"<button class=\"button\"",
-			"<button href",
-			"href",
-			"jobs",
-			"controllerAs",
-			"dashboard-icon",
-			"#/",
-			"#",
-			"#/",
-			"dashboard",
-			"jobs",
-			"log",
-			"signUp",
-			"signup",
-			"checklogin",
-			"req.user",
-			"check",
-			"account",
-			"checklogin",
-			"user",
-			"jobs",
-			"getAccount",
-			"req.user",
-			"check",
-			"ng-include",
-			"[ng-view]",
-			"ng-view",
-			"\"alsdkjalskdjalkdjaskd",
-			"alsdkjalskdjalkd",
-			"account",
-			"ng-view",
-			"routeChange",
-			"check",
-			"debounce",
-			"dethro",
-			"job",
-			"(",
-			"account",
-			"post",
-			"resumes",
-			"equals",
-			"atateatatatatattataatatatat",
-			"exec",
-			"Object",
-			"ObjectId",
-			"_id",
-			"log",
-			"Account",
-			"account",
-			"type",
-			"compan",
-			"user.user",
-			"details",
-			"req.body",
-			"uploader",
-			"jg",
-			"addResume"
+			"$promise"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -429,30 +416,28 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "dev/index.html",
 					"settings":
 					{
-						"buffer_size": 1604,
+						"buffer_size": 89,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1459,
-								1459
+								89,
+								89
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "build process for auto creating views with control",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -462,23 +447,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "server/middleware/account.js",
+					"file": "server/dev/api/manage.coffee",
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 1935,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								269,
+								269
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -488,24 +474,24 @@
 				},
 				{
 					"buffer": 2,
-					"file": "server/models/school.js",
+					"file": "server/target/api/manage.js",
 					"settings":
 					{
-						"buffer_size": 363,
+						"buffer_size": 2622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								363,
-								363
+								450,
+								450
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -516,79 +502,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "server/models/review.js",
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 956,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
-								215
+								839,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server/models/account.js",
-					"settings":
-					{
-						"buffer_size": 218,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "server/routes.js",
-					"settings":
-					{
-						"buffer_size": 212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								212,
-								212
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"auto_name": "Taylor is a minimalist designer and a careful prog",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -659,6 +589,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 297.0,
+	"side_bar_width": 373.0,
 	"status_bar_visible": true
 }

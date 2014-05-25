@@ -1,0 +1,152 @@
+/* app prefix: mr */
+/** app-scope classes **/
+
+.mr-button
+	cursor: pointer
+	width: 100%
+	background: $action-color
+	text-decoration: none
+	border: none
+	color: white
+	&[href]
+		color: white
+	display: block
+	text-align: center
+	&:disabled
+		opacity: .5
+	font-size: 16px
+	padding: 20px 0px
+
+.mr-text-link
+	cursor: pointer
+	color: black
+	&:active
+		color: orange
+
+.mr-input
+	width: 100%
+	max-width: 100%
+	@include box-sizing(border-box)
+	border: none
+	padding: 11px 14px
+	border: 1px solid $separator-color
+	@include respond-to(handhelds)
+		border-left: none
+		border-right: none
+	font-size: 19px
+	color: $input-text-color
+	margin: 0
+
+.mr-search
+	@include respond-to(except-handhelds)
+		padding-right: 45px
+	@include appearance(textfield)
+	@include icon(magnifier)
+	background-position: 95% 55%
+	@include respond-to(handhelds)
+		background-position: 10px 55%
+		padding-left: 45px
+
+.mr-arrow
+	background-position: center
+	@include icon(arrow)
+	@include hide-text
+	display: inline-block
+
+.mr-search-area
+	position: relative
+	overflow: visible
+	input
+		position: relative
+	div
+		position: absolute
+		width: 100%
+	ul
+		border: 1px solid $subtle-text-color
+		border-top: none
+		background: white
+		li
+			cursor: pointer
+			color: black
+			&:not(:last-child)
+				border-bottom: 1px solid $separator-color
+			a
+				padding: 15px 20px
+				display: block
+				&:hover
+					background: $separator-color
+	.mr-x
+		display: none
+		position: absolute
+		@include hide-text
+		right: 46px
+		cursor: pointer
+		top: 17.5px
+		width: 11px
+		height: 11px
+		@include icon(x)
+		z-index: 1
+		&.enabled
+			display: inline-block
+		@include respond-to(handhelds)
+			right: 18px
+
+.mr-review-list
+	@include columns(20px 2)
+	line-height: 32px
+	font-size: 18px
+	@include respond-to(handhelds)
+		@include columns(1)
+	li
+		a
+			margin-right: 10px
+	mr-rating
+		float: none
+		display: inline-block
+
+.mr-view-wrap
+	width: 80%
+	@include respond-to(small-screens)
+		width: auto
+	@include respond-to(handhelds)
+		width: auto
+
+.mr-rating-title
+	display: table
+	.mr-score
+		font-size: 18px
+	> span, mr-rating
+		float: left
+		display: table-cell
+		vertical-align: middle
+		@include respond-to(handhelds)
+			display: block
+	> span
+		padding-right: 10px
+	@include respond-to(handhelds)
+		mr-rating
+			margin-top: 10px
+
+.mr-space
+	display: block
+	@include respond-to(handhelds)
+		padding-left: $side-space
+		padding-right: $side-space
+
+.mr-reviewer
+	margin-bottom: 10px
+	display: table
+	time, mr-rating
+		display: table-cell
+		vertical-align: middle
+	time
+		padding-left: 8px
+
+.mr-input-area
+	textarea
+		min-height: 150px
+
+.mr-form
+	margin: 20px 0px
+	button
+		margin-top: 20px
