@@ -44,6 +44,15 @@
       templateUrl: 'assets/views/manage/partials/manage.html',
       controller: 'Manage as manage',
       parent: 'inner'
+    }).state('manageSuccess', {
+      url: '/manage-success',
+      data: {
+        title: 'Manage Success',
+        previous: 'manage'
+      },
+      templateUrl: 'assets/views/manage-success/partials/manage-success.html',
+      controller: 'ManageSuccess as manageSuccess',
+      parent: 'inner'
     }).state('review', {
       url: '/review/:requestId',
       data: {

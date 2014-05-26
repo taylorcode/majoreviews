@@ -1,6 +1,6 @@
 <ul>
     <li ng-repeat="star in stars" ng-class="{'mr-active': star.active}" ng-click="rate(star.index)">
-    	<span ng-style="{width: star.remainder ? ((1 + star.remainder) * 100) + '%' : '100%'}"></span>
+    	<span ng-style="{width: star.remainder ? ((-star.remainder) * 100) + '%' : '100%'}"></span>
     </li>
 </ul>
 <span class="mr-score">{{rating | toFixed:1}}</span>

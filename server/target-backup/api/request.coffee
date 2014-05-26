@@ -1,5 +1,5 @@
 module.exports = (container) ->
-	container.resolve (_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler) ->
+	container.resolve (_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler, error) ->
 
 		create: (req, res, next) ->
 
@@ -13,7 +13,7 @@ module.exports = (container) ->
 				.then (major) ->
 					# return error if the emailDomain doesn't match 
 					# todo add error state
-					return next 'email domain incorrect.' if major.school.emailDomain isnt email.split('@')[1]
+					return next new error.InvalidArgumentError 'email ss incorrect' if major.school.emailDomain isnt email.split('@')[1]
 					requestData =
 						major: major
 						email: email

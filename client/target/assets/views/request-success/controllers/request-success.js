@@ -1,5 +1,5 @@
 (function() {
-  angular.module('major').controller('RequestSuccess', function($scope, $stateParams, $filter, mrApi) {
+  angular.module('major').controller('RequestSuccess', function() {
     return log('Request success loaded');
   });
 

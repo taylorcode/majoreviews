@@ -13,6 +13,8 @@
     this.requestManage = function(email) {
       return mrApi.manage.save({
         email: email
+      }, function() {
+        return $state.go('manageSuccess');
       });
     };
     return this;

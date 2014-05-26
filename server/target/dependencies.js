@@ -29,6 +29,9 @@
     container.register('handler', function() {
       return require('./modules/handler');
     });
+    container.register('error', function() {
+      return require('restify-errors');
+    });
     container.load('async');
     container.register('options', {
       maxAllowedReviews: 3

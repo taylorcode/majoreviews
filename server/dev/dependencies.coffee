@@ -31,6 +31,10 @@ module.exports = (container) ->
   container.register 'handler', ->
     require './modules/handler'
 
+  container.register 'error', ->
+    require 'restify-errors'
+
+
   container.load 'async'
   
   # register options as dependency

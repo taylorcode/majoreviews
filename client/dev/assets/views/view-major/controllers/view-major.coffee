@@ -3,8 +3,8 @@ angular.module('major')
 .controller 'ViewMajor', ($scope, major) ->
 	console.log 'Major View'
 
-	$scope.$parent.$parent.previous = name: 'main'
+	#delete $scope.$parent.$parent.search # remove the search
 
-	delete $scope.$parent.search # remove the search
+	delete $scope.$parent.$parent.$parent.search
 
 	$scope.major = major

@@ -35,7 +35,6 @@ module.exports = (container) ->
 					# updating an existing review
 					if request.updateReview
 						return next 'you sneaky motherfucker' if review._id.toString() isnt request.updateReview.toString()
-						delete review._id
 						delete review.__v
 						return updateReview.resolve Review.findByIdAndUpdate(review._id, review).exec handler(next).error
 
@@ -80,8 +79,13 @@ module.exports = (container) ->
 				res.send review
 
 		remove: (req, res, next) ->
+
+			reviewId = req.params.id
+			# find the request
 			Request.findById(req.body.requestId).exec(handler(next).noDocError)
-			.then ->
-				Review.findByIdAndRemove(req.params.id).exec(handler(next).error)
+			.then (request) ->
+				# if were trying to delete a different review than the one specified in the request
+				return next 'you sneaky motherfucker' if reviewId.toString() isnt request.updateReview.toString()
+				Review.findByIdAndRemove(reviewId).exec(handler(next).error)
 			.then (review) ->
 				res.send review

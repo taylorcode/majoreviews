@@ -1,6 +1,6 @@
 (function() {
   module.exports = function(container) {
-    return container.resolve(function(_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler) {
+    return container.resolve(function(_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler, error) {
       return {
         create: function(req, res, next) {
           var email, majorId, requestReview, sendRequest;
@@ -10,7 +10,7 @@
             return Major.findByIdOrName(majorId).populate('school').exec(handler(next).noDocError).then(function(major) {
               var requestData;
               if (major.school.emailDomain !== email.split('@')[1]) {
-                return next('email domain incorrect.');
+                return next(new error.InvalidArgumentError(major.school.emailDomain));
               }
               requestData = {
                 major: major,
@@ -24,7 +24,7 @@
                 });
                 if (!requestData.updateReview && account.reviews.length === options.maxAllowedReviews) {
                   eventEmitter.emit('sendEmail:manage', email, req, res, next);
-                  return;
+                  return res.send(formatResponse('manage my reviews link sent instead.'));
                 }
               }
               return Request.create(requestData).then(null, handler(next).error);

@@ -1,4 +1,4 @@
 angular.module('major')
 
-.controller 'RequestSuccess', ($scope, $stateParams, $filter, mrApi) ->
+.controller 'RequestSuccess', ->
 	log 'Request success loaded'

@@ -1,5 +1,5 @@
 module.exports = (container) ->
-	container.resolve (_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler) ->
+	container.resolve (_, Request, Account, Major, sendEmail, options, formatResponse, eventEmitter, compileTemplate, handler, error) ->
 
 		create: (req, res, next) ->
 
@@ -12,8 +12,7 @@ module.exports = (container) ->
 				Major.findByIdOrName(majorId).populate('school').exec(handler(next).noDocError)
 				.then (major) ->
 					# return error if the emailDomain doesn't match 
-					# todo add error state
-					return next 'email domain incorrect.' if major.school.emailDomain isnt email.split('@')[1]
+					return next (new error.InvalidArgumentError major.school.emailDomain) if major.school.emailDomain isnt email.split('@')[1]
 					requestData =
 						major: major
 						email: email
@@ -25,9 +24,9 @@ module.exports = (container) ->
 
 						# if they haven't, and they've already submitted the max allowed, send the manage email
 						if not requestData.updateReview and account.reviews.length is options.maxAllowedReviews
-							# this is untested 
+							# this is untested
 							eventEmitter.emit 'sendEmail:manage', email, req, res, next
-							return
+							return res.send formatResponse 'manage my reviews link sent instead.'
 
 					Request.create(requestData).then null, handler(next).error
 

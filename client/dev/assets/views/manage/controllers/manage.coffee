@@ -9,5 +9,6 @@ angular.module('major')
 		$scope.$parent.previous = name: 'main'
 
 	@requestManage = (email) ->
-		mrApi.manage.save email: email
+		mrApi.manage.save email: email, ->
+			$state.go 'manageSuccess'
 	@

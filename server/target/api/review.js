@@ -44,7 +44,6 @@
                 if (review._id.toString() !== request.updateReview.toString()) {
                   return next('you sneaky motherfucker');
                 }
-                delete review._id;
                 delete review.__v;
                 return updateReview.resolve(Review.findByIdAndUpdate(review._id, review).exec(handler(next).error));
               }
@@ -81,8 +80,13 @@
           });
         },
         remove: function(req, res, next) {
-          return Request.findById(req.body.requestId).exec(handler(next).noDocError).then(function() {
-            return Review.findByIdAndRemove(req.params.id).exec(handler(next).error);
+          var reviewId;
+          reviewId = req.params.id;
+          return Request.findById(req.body.requestId).exec(handler(next).noDocError).then(function(request) {
+            if (reviewId.toString() !== request.updateReview.toString()) {
+              return next('you sneaky motherfucker');
+            }
+            return Review.findByIdAndRemove(reviewId).exec(handler(next).error);
           }).then(function(review) {
             return res.send(review);
           });

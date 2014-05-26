@@ -20,8 +20,9 @@
 .mr-text-link
 	cursor: pointer
 	color: black
-	&:active
-		color: orange
+	padding: 10px 0px
+	&[href]
+		text-decoration: underline
 
 .mr-input
 	width: 100%
@@ -39,7 +40,8 @@
 
 .mr-search
 	@include respond-to(except-handhelds)
-		padding-right: 45px
+		padding-right: 65px
+		width: 320px
 	@include appearance(textfield)
 	@include icon(magnifier)
 	background-position: 95% 55%
@@ -121,11 +123,12 @@
 		vertical-align: middle
 		@include respond-to(handhelds)
 			display: block
+	mr-rating
+		@include respond-to(handhelds)
+			margin-top: 10px
+			clear: left
 	> span
 		padding-right: 10px
-	@include respond-to(handhelds)
-		mr-rating
-			margin-top: 10px
 
 .mr-space
 	display: block
@@ -150,3 +153,23 @@
 	margin: 20px 0px
 	button
 		margin-top: 20px
+	label
+		position: relative
+		display: block
+	.mr-form-error
+		color: $warning-color
+		@include respond-to(except-handhelds)
+			right: 0
+			top: 0
+			line-height: 46px
+			padding-right: 15px
+			position: absolute
+		@include respond-to(handhelds)
+			padding: 11px
+			display: block
+
+.mr-proper-case
+	text-transform: capitalize
+
+.mr-action-text
+	color: $action-color
