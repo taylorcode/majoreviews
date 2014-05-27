@@ -1,7 +1,6 @@
-# angular.module('major')
+angular.module('major')
 
-# .controller 'Major', ($scope, $route, $routeParams, $location, $http) ->
-#     log 'Major Controller Initialized'
-#     @$route = $route
-#     @$location = $location
-#     @$routeParams = $routeParams
+.controller 'MajorReviews', ($scope, $state, $stateParams, $location, $http) ->
+    log 'MajorReviews Controller Initialized'
+    @$state = $state
+    @$location = $location

@@ -22,7 +22,7 @@ mongoose.connect mongoUri, (err, db) ->
   throw err  if err
   console.log 'Successfully connected to Majoreviews MongoDB.'
 
-app.set 'port', Number(process.env.PORT) or 5000
+app.set 'port', Number(process.env.PORT) or 1234
 app.use express.static clientDir
 app.use bodyParser()
 dependencies container
