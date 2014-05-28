@@ -71,36 +71,40 @@ $view-transition-duration: .5s
 					.inner-state-bar
 						display: none
 			[ui-view]
+				background: $background
 				width: 100%
 				position: absolute
 				left: 0
 
 			.ng-enter
 				opacity: 0
+				z-index: 0
 
 			.ng-enter-active
 				opacity: 1
 
+			.ng-leave
+				z-index: 1
+
+			.ng-leave, .ng-enter
+				@include transition-duration($view-transition-duration)
+
 			.mr-going-forward
 				.ng-leave
-					@include transition-duration($view-transition-duration)
 					@include transform(translateX(0))
 				.ng-leave-active
 					@include transform(translateX(-100%))
 				.ng-enter
-					@include transition-duration($view-transition-duration)
 					@include transform(translateX(100%))
 				.ng-enter-active
 					@include transform(translateX(0))
 
 			.mr-going-back
 				.ng-leave
-					@include transition-duration($view-transition-duration)
 					@include transform(translateX(0))
 				.ng-leave-active
 					@include transform(translateX(100%))
 				.ng-enter
-					@include transition-duration($view-transition-duration)
 					@include transform(translateX(-100%))
 				.ng-enter-active
 					@include transform(translateX(0))
