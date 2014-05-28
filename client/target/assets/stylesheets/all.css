@@ -690,21 +690,16 @@ mr-shiny-mesh {
 @media only screen and (max-width: 680px) {
   /* line 19, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -719,21 +714,16 @@ mr-shiny-mesh {
 
 /* line 28, ../../../dev/assets/views/base/stylesheets/_base.sass */
 [ui-view] [ui-view] {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
 }
 @media only screen and (max-width: 680px) {
   /* line 32, ../../../dev/assets/views/base/stylesheets/_base.sass */
@@ -752,21 +742,16 @@ mr-shiny-mesh {
   }
   /* line 43, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .top-bar {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -782,21 +767,16 @@ mr-shiny-mesh {
   }
   /* line 55, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-search-area {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -808,21 +788,16 @@ mr-shiny-mesh {
   }
   /* line 63, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .inner-state-bar {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -839,14 +814,10 @@ mr-shiny-mesh {
   /* line 75, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view [ui-view] {
     width: 100%;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     position: absolute;
     left: 0;
   }
-  /* line 82, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 81, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-forward .ng-leave {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -854,7 +825,7 @@ mr-shiny-mesh {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
-  /* line 84, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 83, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-forward .ng-leave-active {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -862,7 +833,7 @@ mr-shiny-mesh {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-  /* line 86, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 85, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-forward .ng-enter {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -870,7 +841,7 @@ mr-shiny-mesh {
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
-  /* line 88, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 87, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-forward .ng-enter-active {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -878,7 +849,7 @@ mr-shiny-mesh {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
-  /* line 92, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 91, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-back .ng-leave {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -886,7 +857,7 @@ mr-shiny-mesh {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
-  /* line 94, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 93, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-back .ng-leave-active {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -894,7 +865,7 @@ mr-shiny-mesh {
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
-  /* line 96, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 95, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-back .ng-enter {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -902,7 +873,7 @@ mr-shiny-mesh {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-  /* line 98, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 97, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-going-back .ng-enter-active {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -912,55 +883,55 @@ mr-shiny-mesh {
   }
 }
 
-/* line 101, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 100, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header {
   background: white;
   position: relative;
   z-index: 1;
 }
-/* line 105, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 104, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header nav {
   display: inline-block;
   position: relative;
 }
-/* line 109, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 108, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .service-logo {
   background-image: url(../media/logos/majoreviews.svg);
   background-repeat: no-repeat;
   width: 346px;
   margin-bottom: 15px;
 }
-/* line 112, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 111, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .service-logo:after {
   content: "";
   display: block;
   padding-top: 17.1%;
 }
 @media only screen and (max-width: 680px) {
-  /* line 109, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 108, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .service-logo {
     margin-bottom: 0px;
   }
 }
-/* line 120, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 119, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .service-phrase {
   background-image: url(../media/logos/phrase.svg);
   background-repeat: no-repeat;
   width: 285px;
 }
-/* line 123, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 122, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .service-phrase:after {
   content: "";
   display: block;
   padding-top: 11.3%;
 }
 @media only screen and (max-width: 680px) {
-  /* line 120, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 119, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .service-phrase {
     margin-bottom: 32px;
   }
 }
-/* line 130, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 129, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .service-logo, header .service-phrase {
   display: block;
   text-indent: -9999px;
@@ -969,12 +940,12 @@ header .service-logo, header .service-phrase {
   background-position: center;
 }
 @media only screen and (max-width: 680px) {
-  /* line 130, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 129, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .service-logo, header .service-phrase {
     width: 220px;
   }
 }
-/* line 138, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 137, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .inner-state-bar {
   background: #2c2629;
   color: white;
@@ -985,33 +956,33 @@ header .inner-state-bar {
   z-index: 1;
 }
 @media only screen and (max-width: 680px) {
-  /* line 138, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 137, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .inner-state-bar {
     display: block;
   }
 }
-/* line 148, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 147, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .inner-state-bar span {
   display: block;
   line-height: 45px;
   text-align: center;
 }
-/* line 152, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 151, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .inner-state-bar a {
   display: none;
 }
-/* line 155, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 154, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .home-icon {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-/* line 159, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 158, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .home-icon mr-shiny-mesh {
   width: 180px;
   height: 180px;
 }
-/* line 162, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 161, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header .home-icon span {
   position: absolute;
   left: 0;
@@ -1022,7 +993,7 @@ header .home-icon span {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-/* line 171, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 170, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header:after {
   content: "";
   display: block;
@@ -1030,94 +1001,94 @@ header:after {
   clear: both;
 }
 @media only screen and (max-width: 680px) {
-  /* line 178, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 177, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header nav {
     display: block;
   }
-  /* line 180, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 179, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .top-bar {
     text-align: center;
   }
-  /* line 182, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 181, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header .top-bar .home-icon, header .top-bar .service-logo, header .top-bar .service-phrase {
     display: inline-block;
   }
 }
-/* line 186, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
 header.mr-header-display.body {
   width: auto !important;
 }
 @media only screen and (min-width: 681px) {
-  /* line 186, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display.body {
     margin-left: -60px;
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 184, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display {
     padding-top: 30px;
   }
 }
 @media only screen and (min-width: 681px) {
-  /* line 185, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 184, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display {
     padding: 100px 0px;
     border-bottom-width: 10px;
     text-align: center;
     margin-bottom: 40px;
   }
-  /* line 199, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 198, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display * {
     vertical-align: top;
   }
-  /* line 201, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 200, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display nav {
     margin-left: 36px;
     margin-top: 36px;
     text-align: left;
   }
-  /* line 205, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 204, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display .home-icon {
     margin-left: -50px;
   }
-  /* line 207, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 206, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display .mr-search-area {
     margin-top: 40px;
   }
 }
 @media only screen and (min-width: 681px) {
-  /* line 213, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 212, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal {
     padding: 15px;
     border-bottom-width: 4px;
   }
-  /* line 217, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 216, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal nav {
     padding-left: 14px;
     display: block;
     margin-left: 45px;
   }
-  /* line 221, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 220, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal .home-icon {
     float: left;
   }
-  /* line 223, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 222, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal .home-icon mr-shiny-mesh {
     width: 45px;
     height: 45px;
   }
-  /* line 226, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 225, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal .service-logo {
     width: 200px;
     padding-top: 16px;
     margin-bottom: 0;
   }
-  /* line 230, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 229, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal .service-phrase {
     display: none;
   }
-  /* line 232, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 231, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-normal .mr-search-area {
     position: absolute;
     top: 0;
@@ -1125,13 +1096,13 @@ header.mr-header-display.body {
   }
 }
 
-/* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 237, ../../../dev/assets/views/base/stylesheets/_base.sass */
 .previous-state-nav {
   cursor: pointer;
   color: #b4b8b5;
 }
 @media only screen and (max-width: 680px) {
-  /* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 237, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav {
     position: fixed;
     top: 0;
@@ -1139,41 +1110,41 @@ header.mr-header-display.body {
   }
 }
 @media only screen and (min-width: 681px) {
-  /* line 238, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 237, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav {
     display: none;
   }
-  /* line 246, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 245, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav.active {
     display: block;
   }
 }
-/* line 249, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 248, ../../../dev/assets/views/base/stylesheets/_base.sass */
 .previous-state-nav:hover {
   color: #2c2629;
 }
 @media only screen and (min-width: 681px) {
-  /* line 252, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 251, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav:hover .mr-arrow {
     background-image: url(../media/icons/arrow-pushed.svg);
     background-repeat: no-repeat;
   }
 }
-/* line 255, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 254, ../../../dev/assets/views/base/stylesheets/_base.sass */
 .previous-state-nav .mr-arrow {
   width: 44px;
   height: 45px;
   float: left;
 }
 @media only screen and (min-width: 681px) {
-  /* line 255, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 254, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav .mr-arrow {
     background-image: url(../media/icons/arrow-subtle.svg);
     background-repeat: no-repeat;
     margin-left: -44px;
   }
 }
-/* line 262, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 261, ../../../dev/assets/views/base/stylesheets/_base.sass */
 .previous-state-nav div {
   padding-top: 2px;
   font-size: 14px;
@@ -1182,7 +1153,7 @@ header.mr-header-display.body {
   cursor: pointer;
 }
 @media only screen and (min-width: 681px) {
-  /* line 262, ../../../dev/assets/views/base/stylesheets/_base.sass */
+  /* line 261, ../../../dev/assets/views/base/stylesheets/_base.sass */
   .previous-state-nav div {
     display: block;
   }
