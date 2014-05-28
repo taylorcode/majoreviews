@@ -1,5 +1,23 @@
 (function() {
   angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router']).config(function($locationProvider, $stateProvider, $urlRouterProvider, $httpProvider, $provide) {
+    $httpProvider.interceptors.push(function($q, $rootScope) {
+      $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0;
+      return {
+        request: function(config) {
+          $rootScope.httpLoadCount++;
+          $rootScope.httpLoading = true;
+          return config;
+        },
+        response: function(response) {
+          $rootScope.httpLoadedCount++;
+          if ($rootScope.httpLoadCount === $rootScope.httpLoadedCount) {
+            $rootScope.httpLoading = false;
+            $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0;
+          }
+          return response;
+        }
+      };
+    });
     $provide.decorator('$state', function($delegate, $rootScope) {
       $rootScope.$on('$stateChangeSuccess', function(ev, state) {
         var previous;
@@ -135,12 +153,15 @@
         return $(window).scrollTop(pos);
       };
     });
-  }).run(function($rootScope, mrApi, $state, mediaQueries) {
+  }).run(function($rootScope, mrApi, $state, mediaQueries, $timeout) {
     var resolutions;
     window.mrApi = mrApi;
     window.state = $state;
     $rootScope.viewTransitionDuration = 500;
-    $rootScope.$state = $state;
+    $rootScope.$watch('httpLoadedCount', function(loaded) {
+      log(loaded, $rootScope.httpLoadCount);
+      return log('LOADED PERCENT' + (loaded / $rootScope.httpLoadCount));
+    });
     $rootScope.$on('$stateChangeStart', function(ev, state) {
       return $rootScope.backwards = $state.previous === state;
     });

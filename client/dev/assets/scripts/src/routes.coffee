@@ -2,6 +2,26 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
 
 .config ($locationProvider, $stateProvider, $urlRouterProvider, $httpProvider, $provide) ->
 
+  # response interceptor for loading
+  $httpProvider.interceptors.push ($q, $rootScope) ->
+
+    $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0
+
+    request: (config) ->
+      $rootScope.httpLoadCount++
+      $rootScope.httpLoading = true
+      config
+    response: (response) ->
+      $rootScope.httpLoadedCount++
+      if $rootScope.httpLoadCount is $rootScope.httpLoadedCount
+        $rootScope.httpLoading = false
+        $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0
+      response
+    # requestError: ->
+    #   log arguments
+    # responseError: ->
+    #   log arguments
+
   $provide.decorator '$state', ($delegate, $rootScope) ->
     $rootScope.$on '$stateChangeSuccess', (ev, state) ->
       # set the previous state using state data
@@ -134,15 +154,16 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
       pos = if $rootScope.media.sizes.handhelds then angular.element('[mr-scroll-anchor]').offset().top else 0
       $(window).scrollTop pos
 
-.run ($rootScope, mrApi, $state, mediaQueries) ->
+.run ($rootScope, mrApi, $state, mediaQueries, $timeout) ->
 
   window.mrApi = mrApi
   window.state = $state
 
   $rootScope.viewTransitionDuration = 500
 
-  # augment $rootScope with $state
-  $rootScope.$state = $state
+  $rootScope.$watch 'httpLoadedCount', (loaded) ->
+    log loaded, $rootScope.httpLoadCount
+    log 'LOADED PERCENT' + (loaded / $rootScope.httpLoadCount)
 
   # check if previous state to active state is the next state
   $rootScope.$on '$stateChangeStart', (ev, state) ->

@@ -97,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-@-webkit-keyframes viewTransition {
+@-webkit-keyframes loaderAppear {
   /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
   0% {
     opacity: 0;
@@ -109,7 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-@-moz-keyframes viewTransition {
+@-moz-keyframes loaderAppear {
   /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
   0% {
     opacity: 0;
@@ -121,7 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-@keyframes viewTransition {
+@keyframes loaderAppear {
   /* line 66, ../../../dev/assets/stylesheets/_mixins.sass */
   0% {
     opacity: 0;
@@ -241,6 +241,30 @@ a[href] {
 /* line 45, ../../../dev/assets/stylesheets/_styles.sass */
 a[href]:hover {
   text-decoration: underline;
+}
+
+/* line 48, ../../../dev/assets/stylesheets/_styles.sass */
+.mr-loader {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: green;
+  z-index: 999999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  opacity: 1;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
 }
 
 /* app prefix: mr */
