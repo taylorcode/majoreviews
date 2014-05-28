@@ -44,7 +44,7 @@
     return console.log('Successfully connected to Majoreviews MongoDB.');
   });
 
-  app.set('port', Number(process.env.PORT) || 5000);
+  app.set('port', Number(process.env.PORT) || 1234);
 
   app.use(express["static"](clientDir));
 
