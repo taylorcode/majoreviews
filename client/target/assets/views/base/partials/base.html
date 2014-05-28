@@ -27,7 +27,7 @@
 		<span ng-if="media.sizes.handhelds">{{$state.current.data.title}}</span>
 	</div>
 </header>
-<div ng-class="{true: 'mr-going-back', false: 'mr-going-forward'}[backwards]">
+<div id="inner-view" ng-class="{true: 'mr-going-back', false: 'mr-going-forward'}[backwards]">
 	<div class="previous-state-nav body" ng-class="{active: $state.previous != null}" ng-click="$state.go($state.previous, $previousStateParams)">
 		<a class="mr-arrow"></a>
 		<div ng-if="!media.sizes.handhelds">{{$state.previous.data.title}}</div>

@@ -30,12 +30,10 @@ $view-transition-duration: .5s
 	&#main-view
 		@include respond-to(handhelds)
 			&.ng-enter
-				@include transition-duration($view-transition-duration)
 
 			&.ng-enter-active
 
 			&.ng-leave
-				@include transition-duration($view-transition-duration)
 
 			&.ng-leave-active
 
@@ -77,25 +75,37 @@ $view-transition-duration: .5s
 				position: absolute
 				left: 0
 
+			.ng-enter
+				opacity: 0
+
+			.ng-enter-active
+				opacity: 1
+
 			.mr-going-forward
 				.ng-leave
+					@include transition-duration($view-transition-duration)
 					@include transform(translateX(0))
 				.ng-leave-active
 					@include transform(translateX(-100%))
 				.ng-enter
+					@include transition-duration($view-transition-duration)
 					@include transform(translateX(100%))
 				.ng-enter-active
 					@include transform(translateX(0))
 
 			.mr-going-back
 				.ng-leave
+					@include transition-duration($view-transition-duration)
 					@include transform(translateX(0))
 				.ng-leave-active
 					@include transform(translateX(100%))
 				.ng-enter
+					@include transition-duration($view-transition-duration)
 					@include transform(translateX(-100%))
 				.ng-enter-active
 					@include transform(translateX(0))
+
+
 
 header
 	background: white
