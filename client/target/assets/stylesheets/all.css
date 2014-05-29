@@ -313,7 +313,6 @@ a[href]:hover {
   /* line 41, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-search {
     padding-right: 65px;
-    width: 320px;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -321,6 +320,7 @@ a[href]:hover {
   .mr-search {
     background-position: 10px 55%;
     padding-left: 45px;
+    padding-right: 50px;
   }
 }
 
@@ -339,66 +339,77 @@ a[href]:hover {
   position: relative;
   overflow: visible;
 }
-/* line 61, ../../../dev/assets/stylesheets/_classes.sass */
+@media only screen and (min-width: 681px) {
+  /* line 58, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-search-area {
+    width: 320px;
+  }
+}
+/* line 63, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area input {
   position: relative;
 }
-/* line 63, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 65, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area div {
   position: absolute;
   width: 100%;
 }
-/* line 66, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 68, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area ul {
   border: 1px solid #b4b8b5;
   border-top: none;
   background: white;
 }
-/* line 70, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 72, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area ul li {
   cursor: pointer;
   color: black;
 }
-/* line 73, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 75, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area ul li:not(:last-child) {
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 75, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 77, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area ul li a {
   padding: 15px 20px;
   display: block;
 }
-/* line 78, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 80, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area ul li a:hover {
   background: #f1f1f1;
 }
-/* line 80, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 82, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area .mr-x {
   display: none;
+  background-position: center;
   position: absolute;
   text-indent: -9999px;
   font-size: 0;
-  right: 46px;
   cursor: pointer;
-  top: 17.5px;
-  width: 11px;
-  height: 11px;
+  width: 50px;
+  height: 100%;
   background-image: url(../media/icons/x.svg);
   background-repeat: no-repeat;
   z-index: 1;
 }
-/* line 91, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 92, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-search-area .mr-x.enabled {
   display: inline-block;
 }
 @media only screen and (max-width: 680px) {
-  /* line 80, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 82, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-search-area .mr-x {
-    right: 18px;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 681px) {
+  /* line 82, ../../../dev/assets/stylesheets/_classes.sass */
+  .mr-search-area .mr-x {
+    right: 20px;
   }
 }
 
-/* line 96, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 99, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-review-list {
   -webkit-columns: 20px 2;
   -moz-columns: 20px 2;
@@ -409,7 +420,7 @@ a[href]:hover {
   font-size: 18px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 96, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 99, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-review-list {
     -webkit-columns: 1;
     -moz-columns: 1;
@@ -418,116 +429,116 @@ a[href]:hover {
     columns: 1;
   }
 }
-/* line 103, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 106, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-review-list li a {
   margin-right: 10px;
 }
-/* line 105, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 108, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-review-list mr-rating {
   float: none;
   display: inline-block;
 }
 
-/* line 109, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 112, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-view-wrap {
   width: 80%;
 }
 @media only screen and (min-width: 681px) and (max-width: 999px) {
-  /* line 109, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 112, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-view-wrap {
     width: auto;
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 109, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 112, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-view-wrap {
     width: auto;
   }
 }
 
-/* line 116, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 119, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-rating-title {
   display: table;
 }
-/* line 118, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 121, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-rating-title .mr-score {
   font-size: 18px;
 }
-/* line 120, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 123, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-rating-title > span, .mr-rating-title mr-rating {
   float: left;
   display: table-cell;
   vertical-align: middle;
 }
 @media only screen and (max-width: 680px) {
-  /* line 120, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 123, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-rating-title > span, .mr-rating-title mr-rating {
     display: block;
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 126, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 129, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-rating-title mr-rating {
     margin-top: 10px;
     clear: left;
   }
 }
-/* line 130, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 133, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-rating-title > span {
   padding-right: 10px;
 }
 
-/* line 133, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 136, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-space {
   display: block;
 }
 @media only screen and (max-width: 680px) {
-  /* line 133, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 136, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-space {
     padding-left: 11px;
     padding-right: 11px;
   }
 }
 
-/* line 139, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 142, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviewer {
   margin-bottom: 10px;
   display: table;
 }
-/* line 142, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 145, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviewer time, .mr-reviewer mr-rating {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 145, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 148, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-reviewer time {
   padding-left: 8px;
 }
 
-/* line 149, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 152, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-input-area textarea {
   min-height: 150px;
 }
 
-/* line 152, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 155, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-form {
   margin: 20px 0px;
 }
-/* line 154, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 157, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-form button {
   margin-top: 20px;
 }
-/* line 156, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 159, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-form label {
   position: relative;
   display: block;
 }
-/* line 159, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 162, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-form .mr-form-error {
   color: #be3535;
 }
 @media only screen and (min-width: 681px) {
-  /* line 159, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 162, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-form .mr-form-error {
     right: 0;
     top: 0;
@@ -537,24 +548,24 @@ a[href]:hover {
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 159, ../../../dev/assets/stylesheets/_classes.sass */
+  /* line 162, ../../../dev/assets/stylesheets/_classes.sass */
   .mr-form .mr-form-error {
     padding: 11px;
     display: block;
   }
 }
 
-/* line 171, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 174, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-proper-case {
   text-transform: capitalize;
 }
 
-/* line 174, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 177, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-action-text {
   color: #03a588;
 }
 
-/* line 177, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 180, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-loader {
   background-image: url(../media/icons/loader.svg);
   background-repeat: no-repeat;
@@ -570,7 +581,7 @@ a[href]:hover {
   font-size: 0;
 }
 
-/* line 189, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 192, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-load-overlay {
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -581,7 +592,7 @@ a[href]:hover {
   visibility: hidden;
   opacity: 0;
 }
-/* line 198, ../../../dev/assets/stylesheets/_classes.sass */
+/* line 201, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-load-overlay.visible {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
