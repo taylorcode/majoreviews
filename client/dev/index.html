@@ -12,7 +12,9 @@
 
 <body ontouchstart ng-controller="Major as major">
 
-    <span class="mr-loader">LOADING...</span>
+    <div class="mr-load-overlay" ng-class="{visible: httpDelayed}">
+        <span class="mr-loader">LOADING...</span>
+    </div>
 
     <div ui-view id="main-view"></div>
 

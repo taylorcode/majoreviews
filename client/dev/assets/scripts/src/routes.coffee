@@ -3,19 +3,15 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
 .config ($locationProvider, $stateProvider, $urlRouterProvider, $httpProvider, $provide) ->
 
   # response interceptor for loading
-  $httpProvider.interceptors.push ($q, $rootScope) ->
-
-    $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0
-
+  $http = null
+  $httpProvider.interceptors.push ($q, $rootScope, $injector) ->
     request: (config) ->
-      $rootScope.httpLoadCount++
-      $rootScope.httpLoading = true
+      $http = $http or $injector.get '$http'
+      $rootScope.pendingRequests = $http.pendingRequests.length
       config
     response: (response) ->
-      $rootScope.httpLoadedCount++
-      if $rootScope.httpLoadCount is $rootScope.httpLoadedCount
-        $rootScope.httpLoading = false
-        $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0
+      $http = $http or $injector.get '$http'
+      $rootScope.pendingRequests = $http.pendingRequests.length
       response
     # requestError: ->
     #   log arguments
@@ -159,11 +155,23 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
   window.mrApi = mrApi
   window.state = $state
 
-  $rootScope.viewTransitionDuration = 500
+  loadTimeout = null
+  loadTimeoutDuration = 500
+  # watch pending requests, set httpLoading if > 0
+  $rootScope.$watch 'pendingRequests', (num) ->
+    $rootScope.httpLoading = if num then true else false
 
-  $rootScope.$watch 'httpLoadedCount', (loaded) ->
-    log loaded, $rootScope.httpLoadCount
-    log 'LOADED PERCENT' + (loaded / $rootScope.httpLoadCount)
+  # set httpDelayed if more than loadTimeoutDuration has passed since httpLoading started
+  $rootScope.$watch 'httpLoading', (loading) ->
+    if loading
+      return loadTimeout = $timeout -> 
+        $rootScope.httpDelayed = true
+      , loadTimeoutDuration
+    $rootScope.httpDelayed = false
+    #$timeout.cancel loadTimeout
+
+  # augment $rootScope with $state
+  $rootScope.$state = $state
 
   # check if previous state to active state is the next state
   $rootScope.$on '$stateChangeStart', (ev, state) ->

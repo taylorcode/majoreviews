@@ -243,30 +243,6 @@ a[href]:hover {
   text-decoration: underline;
 }
 
-/* line 48, ../../../dev/assets/stylesheets/_styles.sass */
-.mr-loader {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  display: inline-block;
-  background: green;
-  z-index: 999999;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  opacity: 1;
-  -webkit-transition-duration: 4s;
-  -moz-transition-duration: 4s;
-  -o-transition-duration: 4s;
-  transition-duration: 4s;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
 /* app prefix: mr */
 /*app-scope classes */
 /* line 4, ../../../dev/assets/stylesheets/_classes.sass */
@@ -576,6 +552,48 @@ a[href]:hover {
 /* line 174, ../../../dev/assets/stylesheets/_classes.sass */
 .mr-action-text {
   color: #03a588;
+}
+
+/* line 177, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-loader {
+  background-image: url(../media/icons/loader.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  text-indent: -9999px;
+  font-size: 0;
+}
+
+/* line 189, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-load-overlay {
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  height: 0px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 198, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-load-overlay.visible {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* line 1, ../../../dev/assets/stylesheets/_directives.sass */

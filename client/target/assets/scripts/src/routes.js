@@ -1,19 +1,17 @@
 (function() {
   angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router']).config(function($locationProvider, $stateProvider, $urlRouterProvider, $httpProvider, $provide) {
-    $httpProvider.interceptors.push(function($q, $rootScope) {
-      $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0;
+    var $http;
+    $http = null;
+    $httpProvider.interceptors.push(function($q, $rootScope, $injector) {
       return {
         request: function(config) {
-          $rootScope.httpLoadCount++;
-          $rootScope.httpLoading = true;
+          $http = $http || $injector.get('$http');
+          $rootScope.pendingRequests = $http.pendingRequests.length;
           return config;
         },
         response: function(response) {
-          $rootScope.httpLoadedCount++;
-          if ($rootScope.httpLoadCount === $rootScope.httpLoadedCount) {
-            $rootScope.httpLoading = false;
-            $rootScope.httpLoadCount = $rootScope.httpLoadedCount = 0;
-          }
+          $http = $http || $injector.get('$http');
+          $rootScope.pendingRequests = $http.pendingRequests.length;
           return response;
         }
       };
@@ -154,14 +152,23 @@
       };
     });
   }).run(function($rootScope, mrApi, $state, mediaQueries, $timeout) {
-    var resolutions;
+    var loadTimeout, loadTimeoutDuration, resolutions;
     window.mrApi = mrApi;
     window.state = $state;
-    $rootScope.viewTransitionDuration = 500;
-    $rootScope.$watch('httpLoadedCount', function(loaded) {
-      log(loaded, $rootScope.httpLoadCount);
-      return log('LOADED PERCENT' + (loaded / $rootScope.httpLoadCount));
+    loadTimeout = null;
+    loadTimeoutDuration = 500;
+    $rootScope.$watch('pendingRequests', function(num) {
+      return $rootScope.httpLoading = num ? true : false;
     });
+    $rootScope.$watch('httpLoading', function(loading) {
+      if (loading) {
+        return loadTimeout = $timeout(function() {
+          return $rootScope.httpDelayed = true;
+        }, loadTimeoutDuration);
+      }
+      return $rootScope.httpDelayed = false;
+    });
+    $rootScope.$state = $state;
     $rootScope.$on('$stateChangeStart', function(ev, state) {
       return $rootScope.backwards = $state.previous === state;
     });
