@@ -14,7 +14,7 @@
         subject: subject,
         html: html
       };
-      return mail(mailOptions);
+      return nodemailer.mail(mailOptions);
     };
   };
 

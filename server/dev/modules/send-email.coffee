@@ -15,7 +15,7 @@ module.exports = (service, email, password) ->
       # text: 'Hello world ✔', // plaintext body
       html: html
 
-    mail mailOptions
+    nodemailer.mail mailOptions
     
     # # create reusable transport method (opens pool of SMTP connections)
     # smtpTransport = nodemailer.createTransport 'SMTP',
