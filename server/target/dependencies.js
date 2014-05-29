@@ -7,7 +7,7 @@
     var models;
     models = ['Account', 'Major', 'Request', 'Review', 'School'];
     container.register('sendEmail', function() {
-      return require('./modules/send-email')('Gmail', 'taylorsmcintyre@gmail.com', 'TMgoogle');
+      return require('./modules/send-email')('iCloud', 'tsm.mac@icloud.com', 'taylormac11');
     });
     container.register('eventEmitter', function() {
       var events;

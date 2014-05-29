@@ -10,7 +10,7 @@ module.exports = (container) ->
   
   # register modules as dependencies
   container.register 'sendEmail', ->
-    require('./modules/send-email') 'Gmail', 'taylorsmcintyre@gmail.com', 'TMgoogle'
+    require('./modules/send-email') 'iCloud', 'tsm.mac@icloud.com', 'taylormac11'
 
   container.register 'eventEmitter', ->
     events = require('events')
