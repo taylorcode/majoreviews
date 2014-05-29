@@ -32,11 +32,13 @@ module.exports = (container) ->
 				Request.findById(requestId).exec(handler(next).noDocError)
 				.then (request) ->
 					review.time = new Date
+					reviewId = review._id
 					# updating an existing review
 					if request.updateReview
-						return next 'you sneaky motherfucker' if review._id.toString() isnt request.updateReview.toString()
-						delete review.__v
-						return updateReview.resolve Review.findByIdAndUpdate(review._id, review).exec handler(next).error
+						return next 'you sneaky motherfucker' if reviewId.toString() isnt request.updateReview.toString()
+						delete review._id # cannot mod id
+						delete review.__v # - prevent manipulation
+						return updateReview.resolve Review.findByIdAndUpdate(reviewId, review).exec handler(next).error
 
 					review.major = request.major
 					createReview.resolve Review.create(review).then null, handler(next).error

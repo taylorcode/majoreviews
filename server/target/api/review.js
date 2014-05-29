@@ -39,13 +39,16 @@
           };
           createUpdateReview = function(requestId, review, createReview, updateReview) {
             return Request.findById(requestId).exec(handler(next).noDocError).then(function(request) {
+              var reviewId;
               review.time = new Date;
+              reviewId = review._id;
               if (request.updateReview) {
-                if (review._id.toString() !== request.updateReview.toString()) {
+                if (reviewId.toString() !== request.updateReview.toString()) {
                   return next('you sneaky motherfucker');
                 }
+                delete review._id;
                 delete review.__v;
-                return updateReview.resolve(Review.findByIdAndUpdate(review._id, review).exec(handler(next).error));
+                return updateReview.resolve(Review.findByIdAndUpdate(reviewId, review).exec(handler(next).error));
               }
               review.major = request.major;
               return createReview.resolve(Review.create(review).then(null, handler(next).error));
