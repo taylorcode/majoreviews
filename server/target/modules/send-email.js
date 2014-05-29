@@ -6,26 +6,15 @@
   module.exports = function(service, email, password) {
     var sendEmail;
     return sendEmail = function(to, subject, html) {
-      var mailOptions, smtpTransport;
-      smtpTransport = nodemailer.createTransport('SMTP', {
-        service: service,
-        auth: {
-          user: email,
-          pass: password
-        }
-      });
+      var mailOptions;
+      email = 'taylorsmcintyre@gmail.com';
       mailOptions = {
-        from: 'Majoreviews.com ✔ <' + email + '>',
+        from: 'Majoreviews.com <' + email + '>',
         to: to,
         subject: subject,
         html: html
       };
-      return smtpTransport.sendMail(mailOptions, function(error, response) {
-        if (error) {
-          return next(err);
-        }
-        return smtpTransport.close();
-      });
+      return mail(mailOptions);
     };
   };
 
