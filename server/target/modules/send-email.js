@@ -16,7 +16,7 @@
       });
       mailOptions = {
         from: 'Majoreviews.com ✔ <' + email + '>',
-        to: 'tmcintyr@calpoly.edu',
+        to: to,
         subject: subject,
         html: html
       };

@@ -15,7 +15,7 @@ module.exports = (service, email, password) ->
     mailOptions =
       from: 'Majoreviews.com ✔ <' + email + '>' # sender address
       #to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers
-      to: 'tmcintyr@calpoly.edu'
+      to: to
       subject: subject # Subject line
       # text: 'Hello world ✔', // plaintext body
       html: html
