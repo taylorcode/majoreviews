@@ -174,7 +174,7 @@ body {
   background: #fafafc;
   zoom: 1;
   font-size: 16px;
-  min-height: 568px;
+  min-height: 872px;
   font-family: Source Sans Pro, sans-serif;
   color: #2c2629;
 }
@@ -787,7 +787,7 @@ mr-shiny-mesh {
   }
   /* line 45, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view .mr-header-normal .top-bar {
-    margin-top: -302px;
+    margin-top: -304px;
   }
   /* line 49, ../../../dev/assets/views/base/stylesheets/_base.sass */
   [ui-view]#main-view.ng-enter .mr-header-normal .top-bar {
