@@ -168,7 +168,7 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
         $rootScope.httpDelayed = true
       , loadTimeoutDuration
     $rootScope.httpDelayed = false
-    #$timeout.cancel loadTimeout
+    $timeout.cancel loadTimeout
 
   # augment $rootScope with $state
   $rootScope.$state = $state

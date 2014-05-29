@@ -166,7 +166,8 @@
           return $rootScope.httpDelayed = true;
         }, loadTimeoutDuration);
       }
-      return $rootScope.httpDelayed = false;
+      $rootScope.httpDelayed = false;
+      return $timeout.cancel(loadTimeout);
     });
     $rootScope.$state = $state;
     $rootScope.$on('$stateChangeStart', function(ev, state) {
