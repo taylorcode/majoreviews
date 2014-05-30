@@ -14,6 +14,7 @@
 	</div>
 	<h2>Reviews</h2>
 	<ul class="mr-reviews">
+		<span ng-if="!major.reviews.length" class="no-reviews">No reviews yet.</span>
 		<li ng-repeat="review in major.reviews" class="mr-review">
 			<div class="mr-reviewer">
 				<mr-rating rating="review.overall" class="mr-rating-medium no-score"></mr-rating>

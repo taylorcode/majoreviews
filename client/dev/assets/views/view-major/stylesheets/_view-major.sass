@@ -3,6 +3,10 @@
 	@include respond-to(except-handhelds)
 		padding: 20px
 		border-left: 1px solid $separator-color
+	@include respond-to(handhelds)
+		.no-reviews
+			display: inline-block
+			padding: 20px $side-space
 
 .mr-review
 	margin-bottom: 20px
@@ -10,7 +14,7 @@
 		padding-top: 20px
 		border-top: 1px solid $separator-color
 	@include respond-to(handhelds)
-		padding: 20px 11px
+		padding: 20px $side-space
 
 #main-rating-area
 	margin-bottom: 30px

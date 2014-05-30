@@ -1299,45 +1299,52 @@ header.mr-header-display.body {
     border-left: 1px solid #f1f1f1;
   }
 }
+@media only screen and (max-width: 680px) {
+  /* line 7, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  .mr-reviews .no-reviews {
+    display: inline-block;
+    padding: 20px 11px;
+  }
+}
 
-/* line 7, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+/* line 11, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
 .mr-review {
   margin-bottom: 20px;
 }
-/* line 9, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+/* line 13, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
 .mr-review:not(:first-child) {
   padding-top: 20px;
   border-top: 1px solid #f1f1f1;
 }
 @media only screen and (max-width: 680px) {
-  /* line 7, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  /* line 11, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
   .mr-review {
     padding: 20px 11px;
   }
 }
 
-/* line 15, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+/* line 19, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
 #main-rating-area {
   margin-bottom: 30px;
   clear: left;
 }
 @media only screen and (max-width: 680px) {
-  /* line 19, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  /* line 23, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
   #main-rating-area mr-ratings {
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 681px) {
-  /* line 15, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  /* line 19, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
   #main-rating-area {
     display: table;
     width: 100%;
   }
-  /* line 24, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  /* line 28, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
   #main-rating-area mr-ratings, #main-rating-area div {
     display: table-cell;
   }
-  /* line 26, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
+  /* line 30, ../../../dev/assets/views/view-major/stylesheets/_view-major.sass */
   #main-rating-area a {
     position: relative;
     top: 14px;
