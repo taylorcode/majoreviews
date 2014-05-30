@@ -63,6 +63,4 @@ Function::partial = ->
       i++
     fn.apply this, args
 
-formatResponse = require('./plugins/response-formatter.js')
-async = require('async')
 exports.setup = setup

@@ -1,7 +1,8 @@
-mongoose = require('mongoose')
+mongoose = require 'mongoose'
 SchemaString = mongoose.SchemaTypes.String
 SchemaMixed = mongoose.SchemaTypes.Mixed
-validate = require('./validation-regexp')
+validate = require './validation-regexp'
+
 SchemaString::minLength = (minLength, message) ->
   testMinLength = (v) ->
     return false  unless v
@@ -12,7 +13,7 @@ SchemaString::minLength = (minLength, message) ->
     msg
     'minLength'
   ]
-  this
+  @
 
 SchemaString::maxLength = (maxLength, message) ->
   testMaxLength = (v) ->
@@ -24,7 +25,7 @@ SchemaString::maxLength = (maxLength, message) ->
     msg
     'maxLength'
   ]
-  this
+  @
 
 SchemaString::fieldType = (type, message) ->
   typeArr = validate.regexp[type]
@@ -33,4 +34,4 @@ SchemaString::fieldType = (type, message) ->
     typeArr[1]
     'fieldType'
   ]
-  this
+  @

@@ -616,6 +616,13 @@ a[href]:hover {
   opacity: 1;
 }
 
+/* line 212, ../../../dev/assets/stylesheets/_classes.sass */
+.mr-char-count {
+  color: #505050;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
 /* line 1, ../../../dev/assets/stylesheets/_directives.sass */
 mr-rating {
   float: left;
@@ -1146,7 +1153,7 @@ header.mr-header-display.body {
   }
   /* line 229, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display .home-icon {
-    margin-left: -50px;
+    margin-left: -80px;
   }
   /* line 231, ../../../dev/assets/views/base/stylesheets/_base.sass */
   header.mr-header-display .mr-search-area {
@@ -1259,7 +1266,7 @@ header.mr-header-display.body {
   }
 }
 
-/* line 297, ../../../dev/assets/views/base/stylesheets/_base.sass */
+/* line 1, ../../../dev/assets/views/main/stylesheets/_main.sass */
 .tagline {
   margin: 30px 0px;
   display: inline-block;

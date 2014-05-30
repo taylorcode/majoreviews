@@ -31,7 +31,7 @@
         query: function(req, res, next) {
           var avgOveralls, getMajorsLean, matchAvgsToMajors;
           getMajorsLean = function() {
-            return Major.find({}).lean().exec(handler(next).error);
+            return Major.find({}).sort('title').lean().exec(handler(next).error);
           };
           avgOveralls = function() {
             var group;
@@ -87,7 +87,12 @@
             }).group(groupByQuery).exec(handler(next).noDocError);
           };
           getMajorLean = function(majorId) {
-            return Major.findByIdOrName(majorId).populate('school, reviews').lean().exec(handler(next).noDocError);
+            return Major.findByIdOrName(majorId).populate('school').populate({
+              path: 'reviews',
+              options: {
+                sort: '-time'
+              }
+            }).lean().exec(handler(next).noDocError);
           };
           matchAvgsToMajor = function(major, avgs) {
             if (!avgs.length) {

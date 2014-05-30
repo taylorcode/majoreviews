@@ -1,3 +1,6 @@
+FIXMES
+findByIdAndUpdate doesn't run middleware or validation -- possible nix and find doc and update manually w/save
+
 TODO
 FIX the review averages thing
 Need to do error states in UI ?

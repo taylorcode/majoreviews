@@ -6,7 +6,7 @@
 	<strong class="mr-space">Please provide your email, and we&#39;ll send you a link so you can review this major.</strong>
 	<form name="form" class="mr-form">
 		<label>
-			<input type="email" class="mr-input" ng-keyup="request.clearError(error)" placeholder="enter your email" ng-model="requestEmail" required>
+			<input type="email" class="mr-input" ng-maxlength="100" maxlength="100" ng-keyup="request.clearError(error)" placeholder="enter your email" ng-model="requestEmail" required>
 			<span class="mr-form-error" ng-if="error">{{error.message}}</span>
 		</label>
 		<button class="mr-button" ng-click="request.requestReview(requestEmail)" ng-disabled="form.$invalid">Request Link</button>

@@ -5,10 +5,13 @@
 
   Schema = mongoose.Schema;
 
+  require('../plugins/validation-augments');
+
   Account = new Schema({
     email: {
       type: String,
-      unique: true
+      unique: true,
+      maxLength: 100
     },
     reviews: [
       {

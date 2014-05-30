@@ -5,15 +5,17 @@
 		{{request.major.title}}
 	</h1>
 
-	<form name="form" id="leave-review" class="mr-input-area mr-form">
-		<textarea class="mr-input" ng-model="request.review.summary" ng-minlength="10" required></textarea>
+	<form name="form" id="leave-review" class="mr-input-area mr-form" ng-init="maxlength=3000">
+		<textarea class="mr-input" ng-model="request.review.summary" ng-minlength="10" ng-maxlength="maxlength" maxlength="{{maxlength}}" required></textarea>
 
-		<div class="mr-rating-aligned mr-proper-case">
+		<span class="mr-char-count mr-space" ng-if="maxlength - request.review.summary.length < 1000">{{maxlength - request.review.summary.length}} characters left</span>
+
+		<div class="mr-rating-aligned mr-proper-case mr-space">
 			<mr-rating rating="request.review.overall" class="mr-rating-big no-score" allow-change="true"></mr-rating>
 			<div>Overall Rating</div>
 		</div>
 
-		<mr-ratings class="mr-rating-small no-score" metrics="request.review.metrics" allow-change="true"></mr-ratings>
+		<mr-ratings class="mr-rating-small no-score mr-space" metrics="request.review.metrics" allow-change="true"></mr-ratings>
 
 		<div ng-class="{split: updateReview}">
 			<button class="mr-button" ng-disabled="form.$invalid" ng-click="review.submitReview(request)" ng-switch="updateReview"><span ng-switch-when="true">Update</span><span ng-switch-when="">Submit</span> Review</button>

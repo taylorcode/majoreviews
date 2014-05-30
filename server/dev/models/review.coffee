@@ -1,9 +1,13 @@
 mongoose = require 'mongoose'
 Schema = mongoose.Schema
 
+require '../plugins/validation-augments'
+
 Review = new Schema
   time: Date
-  summary: String
+  summary:
+    type: String
+    maxLength: 3000
   overall: Number
   major:
     type: Schema.Types.ObjectId

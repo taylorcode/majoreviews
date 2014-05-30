@@ -31,7 +31,7 @@ module.exports = (container) ->
 
 			# get the majors lean
 			getMajorsLean = ->
-				Major.find({}).lean().exec handler(next).error
+				Major.find({}).sort('title').lean().exec handler(next).error
 
 			# group the overall reviews by major id
 			avgOveralls = ->
@@ -74,7 +74,9 @@ module.exports = (container) ->
 				Review.aggregate().match(major: majorId).group(groupByQuery).exec handler(next).noDocError
 
 			getMajorLean = (majorId) ->
-				Major.findByIdOrName(majorId).populate('school, reviews').lean().exec handler(next).noDocError
+				Major.findByIdOrName(majorId).populate('school')
+											 .populate(path: 'reviews', options: sort: '-time')
+											 .lean().exec handler(next).noDocError
 
 			matchAvgsToMajor = (major, avgs) ->
 				return major if not avgs.length

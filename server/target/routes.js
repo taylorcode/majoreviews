@@ -1,5 +1,5 @@
 (function() {
-  var async, checkAdmin, formatResponse, setup;
+  var checkAdmin, setup;
 
   checkAdmin = function(req, res, next) {
     if (req.body.adminKey !== 'zXio093m5jKWpby39rkldPW') {
@@ -60,10 +60,6 @@
       return fn.apply(this, args);
     };
   };
-
-  formatResponse = require('./plugins/response-formatter.js');
-
-  async = require('async');
 
   exports.setup = setup;
 
