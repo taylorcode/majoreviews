@@ -1,7 +1,6 @@
 *
 	//box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75)
 
-
 .body
 	width: 960px
 	margin: 0 auto
@@ -29,13 +28,6 @@ $view-transition-duration: .5s
 		@include hardware-accelerate
 	&#main-view
 		@include respond-to(handhelds)
-			&.ng-enter
-
-			&.ng-enter-active
-
-			&.ng-leave
-
-			&.ng-leave-active
 
 			// top bar animation
 			.top-bar
@@ -66,48 +58,51 @@ $view-transition-duration: .5s
 				.inner-state-bar
 					margin-top: -$top-bar-height
 
-			&.ng-enter
+			&[ui-view].ng-enter
 				.mr-header-display
 					.inner-state-bar
 						display: none
+
 			[ui-view]
 				background: $background
 				width: 100%
 				position: absolute
 				left: 0
 
-			.ng-enter
-				opacity: 0
-				z-index: 0
+			[ui-view]
+				&.ng-enter
+					opacity: 0
+					z-index: 0
 
-			.ng-enter-active
-				opacity: 1
+				&.ng-enter-active
+					opacity: 1
 
-			.ng-leave
-				z-index: 1
-
-			.ng-leave, .ng-enter
-				@include transition-duration($view-transition-duration)
+				&.ng-leave
+					z-index: 1
+				&.ng-leave, &.ng-enter
+					@include transition-duration($view-transition-duration)
 
 			.mr-going-forward
-				.ng-leave
-					@include transform(translateX(0))
-				.ng-leave-active
-					@include transform(translateX(-100%))
-				.ng-enter
-					@include transform(translateX(100%))
-				.ng-enter-active
-					@include transform(translateX(0))
+				[ui-view]
+					&.ng-leave
+						@include transform(translateX(0))
+					&.ng-leave-active
+						@include transform(translateX(-100%))
+					&.ng-enter
+						@include transform(translateX(100%))
+					&.ng-enter-active
+						@include transform(translateX(0))
 
 			.mr-going-back
-				.ng-leave
-					@include transform(translateX(0))
-				.ng-leave-active
-					@include transform(translateX(100%))
-				.ng-enter
-					@include transform(translateX(-100%))
-				.ng-enter-active
-					@include transform(translateX(0))
+				[ui-view]
+					&.ng-leave
+						@include transform(translateX(0))
+					&.ng-leave-active
+						@include transform(translateX(100%))
+					&.ng-enter
+						@include transform(translateX(-100%))
+					&.ng-enter-active
+						@include transform(translateX(0))
 
 
 
@@ -147,6 +142,22 @@ header
 		background-position: center
 		@include respond-to(handhelds)
 			width: 220px
+
+	.school-logo
+		text-align: center
+		margin-bottom: 25px
+		span
+			background-size: 100%
+			display: inline-block
+			@include hide-text
+			@include logo(calpoly)
+			width: 160px
+			&:after
+				content: ''
+				display: block
+				padding-top: 30.34%
+			@include respond-to(handhelds)
+				width: 150px
 
 	.inner-state-bar
 		background: $text-color
@@ -205,7 +216,7 @@ header
 			padding-top: 30px
 
 		@include respond-to(except-handhelds)
-			padding: 100px 0px
+			padding: 40px 0px 100px 0px 
 			border-bottom-width: 10px
 			text-align: center
 			margin-bottom: 40px
@@ -246,6 +257,8 @@ header
 				position: absolute
 				top: 0
 				right: 0
+			.school-logo
+				display: none
 
 $prev-button-width: 44px
 .previous-state-nav
@@ -280,4 +293,9 @@ $prev-button-width: 44px
 		cursor: pointer
 		@include respond-to(except-handhelds)
 			display: block
+
+.tagline
+	margin: 30px 0px
+	display: inline-block
+	color: $input-text-color
 

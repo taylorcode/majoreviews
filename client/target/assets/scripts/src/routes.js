@@ -174,6 +174,9 @@
       return $rootScope.backwards = $state.previous === state;
     });
     FastClick.attach(document.body);
+    document.addEventListener('touchstart', function() {
+      return log('active pseudoclasses enabled.');
+    }, true);
     resolutions = {
       handhelds: [0, 680],
       small: [681, 999],

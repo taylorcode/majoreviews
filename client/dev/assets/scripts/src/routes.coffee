@@ -179,6 +179,10 @@ angular.module('major', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.router'])
 
   FastClick.attach document.body
 
+  document.addEventListener 'touchstart', ->
+    log 'active pseudoclasses enabled.'
+  , true
+
   resolutions =
     handhelds: [0, 680]
     small: [681, 999]

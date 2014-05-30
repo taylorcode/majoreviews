@@ -45,7 +45,7 @@ module.exports = (grunt) ->
             bundle: ['client/target/assets/stylesheets/**/*.css']
 
           data:
-            environment: 'dev'
+            environment: 'prod'
     sync:
       client:
         files: [
