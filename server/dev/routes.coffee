@@ -1,3 +1,7 @@
+# FIXME quick basic to prevent non-admin requests, change this once implement oAuth
+checkAdmin = (req, res, next) ->
+  return next 'not admin.' if req.body.adminKey isnt 'zXio093m5jKWpby39rkldPW'
+  next()
 
 # TODO - error states with restify, not formatResponse
 setup = (container) ->
@@ -15,16 +19,16 @@ setup = (container) ->
     eventEmitter.on 'sendEmail:manage', manage.sendManage
     
     # schools
-    app.post '/api/school', school.create
+    app.post '/api/school', checkAdmin, school.create
     app.get '/api/school/:id', school.get
     
     # major
-    app.post '/api/major', major.create
+    app.post '/api/major', checkAdmin, major.create
     app.get '/api/major', major.query
     app.get '/api/major/:id', major.get
     
     # account
-    app.post '/api/account', account.create
+    app.post '/api/account', checkAdmin, account.create
     app.get '/api/account/:id', account.get
     
     # request

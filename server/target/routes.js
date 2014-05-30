@@ -1,5 +1,12 @@
 (function() {
-  var async, formatResponse, setup;
+  var async, checkAdmin, formatResponse, setup;
+
+  checkAdmin = function(req, res, next) {
+    if (req.body.adminKey !== 'zXio093m5jKWpby39rkldPW') {
+      return next('not admin.');
+    }
+    return next();
+  };
 
   setup = function(container) {
     var account, major, manage, request, review, school;
@@ -11,12 +18,12 @@
     review = require('./api/review')(container);
     container.resolve(function(eventEmitter, app) {
       eventEmitter.on('sendEmail:manage', manage.sendManage);
-      app.post('/api/school', school.create);
+      app.post('/api/school', checkAdmin, school.create);
       app.get('/api/school/:id', school.get);
-      app.post('/api/major', major.create);
+      app.post('/api/major', checkAdmin, major.create);
       app.get('/api/major', major.query);
       app.get('/api/major/:id', major.get);
-      app.post('/api/account', account.create);
+      app.post('/api/account', checkAdmin, account.create);
       app.get('/api/account/:id', account.get);
       app.post('/api/request', request.create);
       app.get('/api/request/:id', request.get);
