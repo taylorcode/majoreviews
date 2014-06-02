@@ -20,7 +20,7 @@
 					<input type="text" class="mr-input mr-search" ng-model="search" placeholder="civil engineering">
 					<div ng-show="filteredMajors.length > 0 && search">
 						<ul>
-							<li ng-repeat="major in (filteredMajors = (majors | filter:search))"><a ng-href="majors/{{major.title | camelCaseToDash}}">{{major.title}}</a></li>
+							<li ng-repeat="major in (filteredMajors = (majors | filter: {title: search}))"><a ng-href="majors/{{major.title | camelCaseToDash}}">{{major.title}}</a></li>
 						</ul>
 					</div>
 				</div>

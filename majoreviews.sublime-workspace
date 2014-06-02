@@ -59,6 +59,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "tasks.txt",
+			"settings":
+			{
+				"buffer_size": 683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/dev/assets/views/view-major/stylesheets/_view-major.sass",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -84,6 +100,29 @@
 	},
 	"file_history":
 	[
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/view-major/partials/view-major.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_classes.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/target/assets/views/main/partials/main.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/main/stylesheets/_main.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/main/partials/main.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/review/partials/review.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/models/review.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request/partials/request.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/models/account.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/api/review.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/plugins/validation-augments.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/routes.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/models/major.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/dev/api/major.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/stylesheets/_variables.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/base/stylesheets/_base.sass",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/base/partials/base.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/index.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/request-success/partials/request-success.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/client/dev/assets/views/manage-success/partials/manage-success.html",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/web.coffee",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/web.js",
+		"/Users/taylormcintyre/Documents/projects/majoreviews/server/target/api/major.js",
 		"/Users/taylormcintyre/Documents/projects/hannah-portfolio/custom-tasks/grunt-copy-subdirs.coffee",
 		"/Users/taylormcintyre/Documents/projects/hannah-portfolio/custom-tasks/grunt-copy-subdirs.js",
 		"/Users/taylormcintyre/Documents/projects/jobagrob/dev/assets/views/base/partials/account.html",
@@ -188,30 +227,7 @@
 		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/partials/posts/1.html",
 		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/package.json",
 		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.css",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/scripts/main copy.js",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/config.rb",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/templates/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/dev/index 2.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/public/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/samples/index.html",
-		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/target/index_2.html",
-		"/Users/taylormcintyre/Library/Caches/Cleanup At Startup/com.fetchsoftworks.Fetch/Fetch Temporary Folder 1/slo_hack.js",
-		"/Users/taylormcintyre/Desktop/something.coffee",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/tags.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/javascripts/main.js",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/slider-images.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/post.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/index.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/3.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/2.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/home.html",
-		"/Users/taylormcintyre/Documents/projects/portfolio/public/partials/posts/0.html",
-		"/Users/taylormcintyre/Desktop/code.js",
-		"/Users/taylormcintyre/Downloads/states 2/states.js"
+		"/Users/taylormcintyre/Documents/projects/taylor-portfolio/prod/app.min.css"
 	],
 	"find":
 	{
@@ -219,9 +235,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/taylormcintyre/Documents/projects/majoreviews",
 			"/Users/taylormcintyre/Documents/projects/jobagrob",
 			"/Users/taylormcintyre/Documents/projects/jobagrob/dev",
 			"/Users/taylormcintyre/Documents/projects/jobagrob",
@@ -236,6 +253,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mr-reviews",
+			"$side-space",
+			"11px",
+			"mr-reviews",
+			"Reviews",
+			"indByIdAndUpdate",
+			"Function::curry",
+			"Function.curry",
+			".curry",
+			"curry",
+			"partial",
+			"-50px",
+			"sort",
+			"Reviews",
+			"margin-top",
+			"margin-top: -",
+			"school",
+			"header",
+			"school",
+			"service",
+			"service-phrase",
 			"/login",
 			"login",
 			"fishie",
@@ -342,28 +380,7 @@
 			"dethro",
 			"job",
 			"(",
-			"account",
-			"post",
-			"resumes",
-			"equals",
-			"atateatatatatattataatatatat",
-			"exec",
-			"Object",
-			"ObjectId",
-			"_id",
-			"log",
-			"Account",
-			"account",
-			"type",
-			"compan",
-			"user.user",
-			"details",
-			"req.body",
-			"uploader",
-			"jg",
-			"addResume",
-			"multi",
-			"mid-wrapper"
+			"account"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -381,8 +398,62 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "tasks.txt",
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/dev/assets/views/view-major/stylesheets/_view-major.sass",
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
